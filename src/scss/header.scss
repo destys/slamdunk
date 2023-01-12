@@ -1,5 +1,90 @@
 //====================================================================================================
 
+.header {
+	// .header__top
+	&__top {
+		padding: rem(17) 0;
+	}
+	// .header__bottom
+	&__bottom {
+		padding: rem(23) 0;
+		background-color: $mainColor;
+		color: #fff;
+	}
+	// .header__container
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: rem(20);
+	}
+	// .header__logo
+	&__logo {
+	}
+	// .header__contacts
+	&__contacts {
+		display: flex;
+		justify-content: space-between;
+		@include adaptiveValue("gap", 86, 10);
+	}
+	// .header__search
+	&__search {
+		display: flex;
+		align-items: center;
+		gap: rem(10);
+		flex: 0 0 rem(195);
+		padding: rem(8) rem(10);
+		border: 1px solid $mainColor;
+	}
+	// .header__menu
+	&__menu {
+		display: flex;
+		align-items: center;
+	}
+}
+.contacts-header {
+	// .contacts-header__item
+	&__item {
+		display: flex;
+		align-items: center;
+		gap: rem(14);
+		font-weight: 700;
+		font-size: rem(16);
+		text-transform: uppercase;
+	}
+}
+.search-header {
+	// .search-header__input
+	&__input {
+		line-height: 1;
+	}
+	// .search-header__button
+	&__button {
+		flex: 0 0 rem(25);
+		width: rem(25);
+		height: rem(25);
+	}
+}
+.menu {
+	// .menu__icon
+	&__icon {
+	}
+	// .menu__body
+	&__body {
+	}
+	// .menu__list
+	&__list {
+		display: flex;
+		gap: rem(37);
+	}
+	// .menu__item
+	&__item {
+	}
+	// .menu__link
+	&__link {
+	}
+}
+
 //====================================================================================================
 
 //Burger
