@@ -9,11 +9,23 @@ textarea {
 	appearance: none;
 }
 .input {
-	border-radius: 0 !important;
+	margin-bottom: rem(10);
 	width: 100%;
 	display: block;
-	padding: 0px 20px;
-	border: 1px solid #eee;
+	padding: rem(9) rem(11);
+	background: #ffffff;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 10px;
+
+	font-weight: 500;
+	font-size: rem(18);
+	color: $mainColor;
+
+	&::placeholder {
+		font-weight: 500;
+		font-size: rem(18);
+		opacity: 0.5;
+	}
 	&._focus {
 	}
 	&._error {
