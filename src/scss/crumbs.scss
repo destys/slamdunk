@@ -1,0 +1,56 @@
+.crumbs {
+    // .crumbs__container
+    &__container {
+        padding: 0;
+    }
+    // .crumbs__list
+    &__list {
+        display: flex;
+        align-items: center;
+
+        padding: rem(16) rem(15) rem(26);
+
+        background-color: #fff;
+
+        line-height: math.div(26, 20);
+        font-size: rem(20);
+        color: $gray;
+
+        overflow-x: auto;
+
+        li {
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+
+            &:first-child {
+                a {
+                    color: $orange;
+                }
+            }
+            a {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            &:not(:last-child) {
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    margin: 0 rem(24);
+                    width: rem(4);
+                    height: rem(4);
+                    border-radius: 50%;
+                    background-color: $gray;
+                }
+            }
+        }
+
+        @media (min-width: $tablet) {
+            margin-top: rem(64);
+            margin-bottom: rem(24);
+            background-color: transparent;
+        }
+    }
+}

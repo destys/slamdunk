@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Каталог"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            @@include('html/_crumbs.htm',{})
+            <div class="header-page">
+                <div class="header-page__container">
+                    <h1 class="header-page__title">Для мужчин<span class="title-dot">.</span><span class="header-page__count">171 806 товаров</span></h1>
+                    
+                </div>
+            </div>
+            <div class="subcategory__slider subcategory__container swiper">
+                <div class="subcategory__wrapper swiper-wrapper">
+                    <a href="#" class="subcategory__slide swiper-slide slide-subcategory">
+                        <div class="slide-subcategory__img">
+                            <img src="@img/catalog/group-1.jpg" alt="group-1">
+                        </div>
+                        <div class="slide-subcategory__title">Обувь</div>
+                    </a>
+                    <a href="#" class="subcategory__slide swiper-slide slide-subcategory">
+                        <div class="slide-subcategory__img">
+                            <img src="@img/catalog/group-2.jpg" alt="group-2">
+                        </div>
+                        <div class="slide-subcategory__title">Одежда</div>
+                    </a>
+                    <a href="#" class="subcategory__slide swiper-slide slide-subcategory">
+                        <div class="slide-subcategory__img">
+                            <img src="@img/catalog/group-3.jpg" alt="group-1">
+                        </div>
+                        <div class="slide-subcategory__title">Верхняя одежда</div>
+                    </a>
+                    <a href="#" class="subcategory__slide swiper-slide slide-subcategory">
+                        <div class="slide-subcategory__img">
+                            <img src="@img/catalog/group-4.jpg" alt="group-1">
+                        </div>
+                        <div class="slide-subcategory__title">Кимоно</div>
+                    </a>
+                    <a href="#" class="subcategory__slide swiper-slide slide-subcategory">
+                        <div class="slide-subcategory__img">
+                            <img src="@img/catalog/group-5.jpg" alt="group-1">
+                        </div>
+                        <div class="slide-subcategory__title">Для тренеровок</div>
+                    </a>
+                    <a href="#" class="subcategory__slide swiper-slide slide-subcategory">
+                        <div class="slide-subcategory__img">
+                            <img src="@img/catalog/group-6.jpg" alt="group-1">
+                        </div>
+                        <div class="slide-subcategory__title">Аксессуары</div>
+                    </a>
+                </div>
+            </div>
+            @@include('html/_brands.htm',{})
+            <section class="catalog">
+                <div class="catalog__container">
+                    <div class="catalog__wrapper">
+                        <aside class="catalog__sidebar sidebar-catalog" data-da=".mobile-filter__wrapper, 767">
+                            <div class="sidebar-catalog__group group-sidebar">
+                                <div class="sidebar-catalog__title">Каталог</div>
+                                <div class="group-sidebar__title">Для мужчин</div>
+                                <div class="group-sidebar__checkbox checkbox-group">
+                                    <input id="c_1" data-error="Ошибка" class="checkbox-group__input" type="checkbox"
+                                        value="1" name="form[]">
+                                    <label for="c_1" class="checkbox-group__label"><span
+                                            class="checkbox-group__text">Текст <span
+                                                class="checkbox-group__count">(21)</span></span></label>
+                                </div>
+                                <div class="group-sidebar__checkbox checkbox-group">
+                                    <input id="c_2" data-error="Ошибка" class="checkbox-group__input" type="checkbox"
+                                        value="1" name="form[]">
+                                    <label for="c_2" class="checkbox-group__label"><span
+                                            class="checkbox-group__text">Текст <span
+                                                class="checkbox-group__count">(21)</span></span></label>
+                                </div>
+                                <div class="group-sidebar__checkbox checkbox-group">
+                                    <input id="c_3" data-error="Ошибка" class="checkbox-group__input" type="checkbox"
+                                        value="1" name="form[]">
+                                    <label for="c_3" class="checkbox-group__label"><span
+                                            class="checkbox-group__text">Текст <span
+                                                class="checkbox-group__count">(21)</span></span></label>
+                                </div>
+                                <div class="group-sidebar__checkbox checkbox-group">
+                                    <input id="c_4" data-error="Ошибка" class="checkbox-group__input" type="checkbox"
+                                        value="1" name="form[]">
+                                    <label for="c_4" class="checkbox-group__label"><span
+                                            class="checkbox-group__text">Текст <span
+                                                class="checkbox-group__count">(21)</span></span></label>
+                                </div>
+                                <div class="group-sidebar__checkbox checkbox-group">
+                                    <input id="c_5" data-error="Ошибка" class="checkbox-group__input" type="checkbox"
+                                        value="1" name="form[]">
+                                    <label for="c_5" class="checkbox-group__label"><span
+                                            class="checkbox-group__text">Текст <span
+                                                class="checkbox-group__count">(21)</span></span></label>
+                                </div>
+                                <ul class="group-sidebar__subcat-list">
+                                    <li class="group-sidebar__subcat-item">
+                                        <a href="#">Для женщин</a>
+                                    </li>
+                                    <li class="group-sidebar__subcat-item">
+                                        <a href="#">Для детей</a>
+                                    </li>
+                                    <li class="group-sidebar__subcat-item">
+                                        <a href="#">Аксессуары</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-catalog__group group-sidebar">
+                                <div class="sidebar-catalog__title">Цены</div>
+                                <div class="group-sidebar__price-range" data-range>
+                                    <input data-range-from="0" value="1341" autocomplete="off" type="hidden"
+                                        name="form[]" class="group-sidebar__input">
+                                    <input data-range-to="10000" value="8321" autocomplete="off" type="hidden"
+                                        name="form[]" class="group-sidebar__input">
+                                </div>
+                                <div data-range-item></div>
+                            </div>
+                            <div class="sidebar-catalog__group group-sidebar">
+                                <div class="sidebar-catalog__title">Размер</div>
+                                <div class="group-sidebar__checkbox checkbox-group">
+                                    <input id="c_11" data-error="Ошибка" class="checkbox-group__input" type="checkbox"
+                                        value="1" name="form[]">
+                                    <label for="c_11" class="checkbox-group__label"><span
+                                            class="checkbox-group__text">Текст <span
+                                                class="checkbox-group__count">(21)</span></span></label>
+                                </div>
+                                <div class="group-sidebar__checkbox checkbox-group">
+                                    <input id="c_21" data-error="Ошибка" class="checkbox-group__input" type="checkbox"
+                                        value="1" name="form[]">
+                                    <label for="c_21" class="checkbox-group__label"><span
+                                            class="checkbox-group__text">Текст <span
+                                                class="checkbox-group__count">(21)</span></span></label>
+                                </div>
+                                <div class="group-sidebar__checkbox checkbox-group">
+                                    <input id="c_31" data-error="Ошибка" class="checkbox-group__input" type="checkbox"
+                                        value="1" name="form[]">
+                                    <label for="c_31" class="checkbox-group__label"><span
+                                            class="checkbox-group__text">Текст <span
+                                                class="checkbox-group__count">(21)</span></span></label>
+                                </div>
+                                <div class="group-sidebar__checkbox checkbox-group">
+                                    <input id="c_41" data-error="Ошибка" class="checkbox-group__input" type="checkbox"
+                                        value="1" name="form[]">
+                                    <label for="c_41" class="checkbox-group__label"><span
+                                            class="checkbox-group__text">Текст <span
+                                                class="checkbox-group__count">(21)</span></span></label>
+                                </div>
+                                <div class="group-sidebar__checkbox checkbox-group">
+                                    <input id="c_51" data-error="Ошибка" class="checkbox-group__input" type="checkbox"
+                                        value="1" name="form[]">
+                                    <label for="c_51" class="checkbox-group__label"><span
+                                            class="checkbox-group__text">Текст <span
+                                                class="checkbox-group__count">(21)</span></span></label>
+                                </div>
+                            </div>
+                            <div class="sidebar-catalog__group group-sidebar">
+                                <div class="sidebar-catalog__title">Цены</div>
+                                <div class="group-sidebar__colors">
+                                    <div class="group-sidebar__checkbox-color">
+                                        <input id="c_211" data-error="Ошибка" class="group-sidebar__input-color"
+                                            type="checkbox" value="1" name="form[]">
+                                        <label for="c_211" class="group-sidebar__label-color">
+                                            <img src="@img/catalog/color-1.svg" alt="color" class="color">
+                                            <img src="@img/catalog/active-color.png" alt="active-color"
+                                                class="active-img">
+                                        </label>
+                                    </div>
+                                    <div class="group-sidebar__checkbox-color">
+                                        <input id="c_22" data-error="Ошибка" class="group-sidebar__input-color"
+                                            type="checkbox" value="1" name="form[]">
+                                        <label for="c_22" class="group-sidebar__label-color">
+                                            <img src="@img/catalog/color-2.svg" alt="color" class="color">
+                                            <img src="@img/catalog/active-color.png" alt="active-color"
+                                                class="active-img">
+                                        </label>
+                                    </div>
+                                    <div class="group-sidebar__checkbox-color">
+                                        <input id="c_23" data-error="Ошибка" class="group-sidebar__input-color"
+                                            type="checkbox" value="1" name="form[]">
+                                        <label for="c_23" class="group-sidebar__label-color">
+                                            <img src="@img/catalog/color-3.svg" alt="color" class="color">
+                                            <img src="@img/catalog/active-color.png" alt="active-color"
+                                                class="active-img">
+                                        </label>
+                                    </div>
+                                    <div class="group-sidebar__checkbox-color">
+                                        <input id="c_24" data-error="Ошибка" class="group-sidebar__input-color"
+                                            type="checkbox" value="1" name="form[]">
+                                        <label for="c_24" class="group-sidebar__label-color">
+                                            <img src="@img/catalog/color-4.svg" alt="color" class="color">
+                                            <img src="@img/catalog/active-color.png" alt="active-color"
+                                                class="active-img">
+                                        </label>
+                                    </div>
+                                    <div class="group-sidebar__checkbox-color">
+                                        <input id="c_25" data-error="Ошибка" class="group-sidebar__input-color"
+                                            type="checkbox" value="1" name="form[]">
+                                        <label for="c_25" class="group-sidebar__label-color">
+                                            <img src="@img/catalog/color-5.svg" alt="color" class="color">
+                                            <img src="@img/catalog/active-color.png" alt="active-color"
+                                                class="active-img">
+                                        </label>
+                                    </div>
+                                    <div class="group-sidebar__checkbox-color">
+                                        <input id="c_26" data-error="Ошибка" class="group-sidebar__input-color"
+                                            type="checkbox" value="1" name="form[]">
+                                        <label for="c_26" class="group-sidebar__label-color">
+                                            <img src="@img/catalog/color-6.svg" alt="color" class="color">
+                                            <img src="@img/catalog/active-color.png" alt="active-color"
+                                                class="active-img">
+                                        </label>
+                                    </div>
+                                    <div class="group-sidebar__checkbox-color">
+                                        <input id="c_27" data-error="Ошибка" class="group-sidebar__input-color"
+                                            type="checkbox" value="1" name="form[]">
+                                        <label for="c_27" class="group-sidebar__label-color">
+                                            <img src="@img/catalog/color-7.svg" alt="color" class="color">
+                                            <img src="@img/catalog/active-color.png" alt="active-color"
+                                                class="active-img">
+                                        </label>
+                                    </div>
+                                    <div class="group-sidebar__checkbox-color">
+                                        <input id="c_28" data-error="Ошибка" class="group-sidebar__input-color"
+                                            type="checkbox" value="1" name="form[]">
+                                        <label for="c_28" class="group-sidebar__label-color">
+                                            <img src="@img/catalog/color-8.svg" alt="color" class="color">
+                                            <img src="@img/catalog/active-color.png" alt="active-color"
+                                                class="active-img">
+                                        </label>
+                                    </div>
+                                    <div class="group-sidebar__checkbox-color">
+                                        <input id="c_29" data-error="Ошибка" class="group-sidebar__input-color"
+                                            type="checkbox" value="1" name="form[]">
+                                        <label for="c_29" class="group-sidebar__label-color">
+                                            <img src="@img/catalog/color-9.svg" alt="color" class="color">
+                                            <img src="@img/catalog/active-color.png" alt="active-color"
+                                                class="active-img">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                        <div class="catalog__inner">
+                            <div class="catalog__actions">
+                                <button type="submit" class="catalog__mobile-filter" data-popup="#mobile-filter">
+                                    <span>Фильтр</span>
+                                    <img src="@img/icons/filters-catalog.svg" alt="filter-catalog">
+                                </button>
+                                <div class="catalog__sort sort-catalog">
+                                    <div class="sort-catalog__title">Сортировать</div>
+                                    <select name="form[]" class="sort-catalog__select">
+                                        <option value="1" selected>по популярности</option>
+                                        <option value="2">Пункт №2</option>
+                                        <option value="3">Пункт №3</option>
+                                        <option value="4">Пункт №4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="catalog__list">
+                                @@include('html/_product.htm',{
+                                "image":"product-img-1.png",
+                                "category":"Мужские кроссовки",
+                                "title":"Nike Dunk Mid Pro SB White Widow",
+                                "price":"33 060 – 57 760 <span>₽</span>"
+                                })
+                                @@include('html/_product.htm',{
+                                "image":"product-img-2.png",
+                                "category":"Кимоно",
+                                "title":"BAPE 1st Camo Kimono Long Shirt Green",
+                                "price":"35 000 <span>₽</span>"
+                                })
+                                @@include('html/_product.htm',{
+                                "image":"product-img-3.png",
+                                "category":"Мужские кроссовки",
+                                "title":"Nike Dunk Mid Pro SB White Widow",
+                                "price":"33 060 – 57 760 <span>₽</span>"
+                                })
+                                @@include('html/_product.htm',{
+                                "image":"product-img-4.png",
+                                "category":"Худи",
+                                "title":"Awake Gel Logo Hoodie Green",
+                                "price":"57 760 <span>₽</span>"
+                                })
+                                @@include('html/_product.htm',{
+                                "image":"product-img-5.png",
+                                "category":"Футболки",
+                                "title":"Aime Leon Dore League Shirt Yellow",
+                                "price":"33 060 – 57 760 <span>₽</span>"
+                                })
+                                @@include('html/_product.htm',{
+                                "image":"product-img-6.png",
+                                "category":"Мужские кроссовки",
+                                "title":"Nike Dunk Mid Pro SB Griptape With Strap",
+                                "price":"33 060 – 57 760 <span>₽</span>"
+                                })
+                                @@include('html/_product.htm',{
+                                "image":"product-img-1.png",
+                                "category":"Мужские кроссовки",
+                                "title":"Nike Dunk Mid Pro SB White Widow",
+                                "price":"33 060 – 57 760 <span>₽</span>"
+                                })
+                                @@include('html/_product.htm',{
+                                "image":"product-img-2.png",
+                                "category":"Кимоно",
+                                "title":"BAPE 1st Camo Kimono Long Shirt Green",
+                                "price":"35 000 <span>₽</span>"
+                                })
+                                @@include('html/_product.htm',{
+                                "image":"product-img-3.png",
+                                "category":"Мужские кроссовки",
+                                "title":"Nike Dunk Mid Pro SB White Widow",
+                                "price":"33 060 – 57 760 <span>₽</span>"
+                                })
+                                @@include('html/_product.htm',{
+                                "image":"product-img-4.png",
+                                "category":"Худи",
+                                "title":"Awake Gel Logo Hoodie Green",
+                                "price":"57 760 <span>₽</span>"
+                                })
+                                @@include('html/_product.htm',{
+                                "image":"product-img-5.png",
+                                "category":"Футболки",
+                                "title":"Aime Leon Dore League Shirt Yellow",
+                                "price":"33 060 – 57 760 <span>₽</span>"
+                                })
+                                @@include('html/_product.htm',{
+                                "image":"product-img-6.png",
+                                "category":"Мужские кроссовки",
+                                "title":"Nike Dunk Mid Pro SB Griptape With Strap",
+                                "price":"33 060 – 57 760 <span>₽</span>"
+                                })
+                                @@include('html/_product.htm',{
+                                "image":"product-img-1.png",
+                                "category":"Мужские кроссовки",
+                                "title":"Nike Dunk Mid Pro SB White Widow",
+                                "price":"33 060 – 57 760 <span>₽</span>"
+                                })
+                                @@include('html/_product.htm',{
+                                "image":"product-img-2.png",
+                                "category":"Кимоно",
+                                "title":"BAPE 1st Camo Kimono Long Shirt Green",
+                                "price":"35 000 <span>₽</span>"
+                                })
+                                @@include('html/_product.htm',{
+                                "image":"product-img-3.png",
+                                "category":"Мужские кроссовки",
+                                "title":"Nike Dunk Mid Pro SB White Widow",
+                                "price":"33 060 – 57 760 <span>₽</span>"
+                                })
+                                @@include('html/_product.htm',{
+                                "image":"product-img-4.png",
+                                "category":"Худи",
+                                "title":"Awake Gel Logo Hoodie Green",
+                                "price":"57 760 <span>₽</span>"
+                                })
+                                @@include('html/_product.htm',{
+                                "image":"product-img-5.png",
+                                "category":"Футболки",
+                                "title":"Aime Leon Dore League Shirt Yellow",
+                                "price":"33 060 – 57 760 <span>₽</span>"
+                                })
+                                @@include('html/_product.htm',{
+                                "image":"product-img-6.png",
+                                "category":"Мужские кроссовки",
+                                "title":"Nike Dunk Mid Pro SB Griptape With Strap",
+                                "price":"33 060 – 57 760 <span>₽</span>"
+                                })
+                            </div>
+                            <div class="catalog__showmore showmore-catalog">
+                                <button type="submit" class="showmore-catalog__button">показать ещё</button>
+                                <div class="showmore-catalog__count-products">171 806 товаров</div>
+                            </div>
+                            <div class="main-sales__mailer mailer-sails">
+                                <div class="mailer-sails__content">
+                                    <div class="mailer-sails__title">
+                                        <div>Скидка 5%</div>
+                                        <div class="text-transparent">за подписку</div>
+                                    </div>
+                                    <div class="mailer-sails__text">Билет на первую покупку.</div>
+                                    <div class="mailer-sails__img">
+                                        <img src="@img/sales/sales-ball.svg" alt="sales-ball">
+                                    </div>
+                                </div>
+                                <form action="#" class="mailer-sails__form form-mailes-sails">
+                                    <div class="form-mailes-sails__field">
+                                        <input autocomplete="off" type="email" name="form[]" data-error="Ошибка"
+                                            placeholder="Ваш e-mail" class="form-mailes-sails__input input">
+                                        <button class="form-mailes-sails__btn">Подписаться</button>
+                                    </div>
+                                    <div class="form-mailes-sails__img">
+                                        <img src="@img/sales/sales-ball-2.svg" alt="sales-ball">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="main-text">
+                                <div class="main-text__container">
+                                    <h3>Slamdunk.Shop: Международный сервис поиска брендовой спортивной одежды.</h3>
+                                    <p>День Рождения Slamdunk.shop был 9 мая 2017 года. Он был открыт двумя амбициозными
+                                        людьми, оба из
+                                        которых имели длительный опыт работы в области спортивных товаров, а также были
+                                        сумасшедшими
+                                        коллекционерами кроссовок, поскольку они оба чувствовали, что нет альтернативы
+                                        крупным розничным
+                                        сетям, доминирующим на рынке в крупных городах. <a href="">Далее</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

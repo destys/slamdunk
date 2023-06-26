@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Оформление заказа"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            <div class="checkout">
+                <div class="checkout__container">
+                    <a href="#" class="checkout__back">Назад</a>
+                    <div class="checkout__wrapper">
+                        <h1 class="checkout__title section-title">Оформление заказа<span class="title-dot">.</span></h1>
+                        <form action="#" class="checkout__form form-checkout">
+                            <div class="form-checkout__step"><span>1.</span>Данные получателя</div>
+                            <div class="form-checkout__block">
+                                <label class="form-checkout__label">Адрес</label>
+                                <div class="form-checkout__block_correct">
+                                    <input autocomplete="off" type="text" name="checkout-address" data-error="Ошибка"
+                                        placeholder="Россия, Барнаул, Весенняя, 4а" class="form-checkout__input input"
+                                        disabled>
+                                    <button type="button" class="button" data-popup="#change-address">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M2.15277 9.16661C2.05215 9.26784 1.98671 9.39871 1.9661 9.53995L1.33944 13.9066C1.32398 14.0091 1.3328 14.1138 1.36519 14.2122C1.39758 14.3107 1.45264 14.4002 1.52593 14.4735C1.59922 14.5467 1.68869 14.6018 1.78714 14.6342C1.8856 14.6666 1.99028 14.6754 2.09277 14.6599L6.45944 14.0333C6.60066 14.0127 6.73154 13.9472 6.83277 13.8466L11.9794 8.70661L7.29277 4.02661L2.15277 9.16661Z"
+                                                fill="#171717" />
+                                            <path
+                                                d="M9.01161 2.30679L8.23828 3.08012L12.9183 7.76013L13.6983 6.98679C16.7869 3.88212 12.1024 -0.784018 9.01161 2.30679Z"
+                                                fill="#171717" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="woocommerce-billing-fields__field-wrapper">
+                                <select name="billing_country" id="billing_country" class="delivery-address__select"
+                                    data-id="1" data-speed="150">
+                                    <option value="AZ">Азербайджан</option>
+                                    <option value="AM">Армения</option>
+                                    <option value="BY">Беларусь</option>
+                                    <option value="KZ">Казахстан</option>
+                                    <option value="PL">Польша</option>
+                                    <option value="RU" selected="selected">Россия</option>
+                                    <option value="UZ">Узбекистан</option>
+                                    <option value="UA">Украина</option>
+                                    <option value="EE">Эстония</option>
+                                </select>
+                                <div class="delivery-address__item" data-priority="12"><label for="billing_city"
+                                        class="delivery-address__label ">Город&nbsp;<abbr class="required"
+                                            title="обязательно">*</abbr></label><input type="text"
+                                        class="delivery-address__input input " name="billing_city" id="billing_city"
+                                        placeholder="" value="Москва (Москва)" data-placeholder=""></div>
+                                <div class="delivery-address__item" data-priority="13"><label for="billing_address_1"
+                                        class="delivery-address__label ">Улица&nbsp;<abbr class="required"
+                                            title="обязательно">*</abbr></label><input type="text"
+                                        class="delivery-address__input input " name="billing_address_1"
+                                        id="billing_address_1" placeholder="" value="Измайловское шоссе, 47"
+                                        data-placeholder=""></div>
+                                <div class="delivery-address__item" data-priority="14"><label for="billing_address_2"
+                                        class="delivery-address__label ">Номер дома&nbsp;<abbr class="required"
+                                            title="обязательно">*</abbr></label><input type="text"
+                                        class="delivery-address__input input " name="billing_address_2"
+                                        id="billing_address_2" placeholder="" value="" data-placeholder=""></div>
+                                <div class="delivery-address__item" data-priority="15"><label for="billing_postcode"
+                                        class="delivery-address__label ">Почтовый индекс&nbsp;<abbr class="required"
+                                            title="обязательно">*</abbr></label><input type="text"
+                                        class="delivery-address__input input " name="billing_postcode"
+                                        id="billing_postcode" placeholder="" value="11231" data-placeholder=""></div>
+                                <div class="delivery-address__item" data-priority="16"><label for="billing_first_name"
+                                        class="delivery-address__label ">Имя&nbsp;<abbr class="required"
+                                            title="обязательно">*</abbr></label><input type="text"
+                                        class="delivery-address__input input " name="billing_first_name"
+                                        id="billing_first_name" placeholder="" value="Жорик Вартанов"
+                                        data-placeholder=""></div>
+                                <div class="delivery-address__item" data-priority="17"><label for="billing_last_name"
+                                        class="delivery-address__label ">Фамилия&nbsp;<abbr class="required"
+                                            title="обязательно">*</abbr></label><input type="text"
+                                        class="delivery-address__input input " name="billing_last_name"
+                                        id="billing_last_name" placeholder="" value="" data-placeholder=""></div>
+                                <div class="delivery-address__item" data-priority="18"><label for="billing_phone"
+                                        class="delivery-address__label ">Телефон&nbsp;<abbr class="required"
+                                            title="обязательно">*</abbr></label><input type="tel"
+                                        class="delivery-address__input input " name="billing_phone" id="billing_phone"
+                                        placeholder="" value="" inputmode="text" autocomplete="off" data-placeholder=""></div>
+                                <div class="delivery-address__item" data-priority="19"><label for="billing_email"
+                                        class="delivery-address__label ">Email&nbsp;<abbr class="required"
+                                            title="обязательно">*</abbr></label><input type="email"
+                                        class="delivery-address__input input " name="billing_email" id="billing_email"
+                                        placeholder="" value="site@some-dev.ru" data-placeholder=""></div>
+                            </div>
+                            <div class="form-checkout__step"><span>2.</span>Выбор доставки</div>
+                            <div class="form-checkout__options">
+                                <div class="form-checkout__radio">
+                                    <input hidden id="o_1" class="form-checkout__input_radio" checked type="radio"
+                                        value="1" name="option_1">
+                                    <label for="o_1" class="form-checkout__label_radio">
+                                        <div>
+                                            <span class="form-checkout__method">Стандартная доставка</span>
+                                        </div>
+                                    </label>
+                                    <span class="form-checkout__timing">15 — 21 рабочий день. Авто и ЖД</span>
+                                </div>
+                                <div class="form-checkout__radio">
+                                    <input hidden id="o_2" class="form-checkout__input_radio" checked type="radio"
+                                        value="2" name="option_1">
+                                    <label for="o_2" class="form-checkout__label_radio">
+                                        <div>
+                                            <span class="form-checkout__method">Почта России</span>
+                                        </div>
+                                    </label>
+                                    <span class="form-checkout__timing">500-700 дней</span>
+                                </div>
+                            </div>
+                            <div class="form-checkout__step"><span>3.</span>Способ оплаты</div>
+                            <div class="form-checkout__options">
+                                <div class="form-checkout__radio">
+                                    <input hidden id="q_1" class="form-checkout__input_radio" checked type="radio"
+                                        value="1" name="option_2">
+                                    <label for="q_1" class="form-checkout__label_radio">
+                                        <div>
+                                            <span class="form-checkout__method">Яндекс.Касса</span>
+                                        </div>
+                                    </label>
+                                    <span class="form-checkout__timing">Оплатить электронными деньгами,
+                                        банковскими
+                                        картами,наличными в терминалах, через интернет-банкинг, в кредитили со
+                                        счёта
+                                        мобильного телефона.</span>
+                                </div>
+                                <div class="form-checkout__radio">
+                                    <input hidden id="q_2" class="form-checkout__input_radio" checked type="radio"
+                                        value="2" name="option_2">
+                                    <label for="q_2" class="form-checkout__label_radio">
+                                        <div>
+                                            <span class="form-checkout__method">Робо.Касса</span>
+                                        </div>
+                                    </label>
+                                    <span class="form-checkout__timing">Оплатить электронными деньгами,
+                                        банковскими
+                                        картами,наличными в терминалах, через интернет-банкинг, в кредитили со
+                                        счёта
+                                        мобильного телефона.</span>
+                                </div>
+                            </div>
+                            <div class="form-checkout__step"><span>4.</span>Данные заказа</div>
+                            <div class="form-checkout__coupone">
+                                <label for="" class="form-checkout__label">Промокод, если есть:</label>
+                                <div>
+                                    <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                        placeholder="Например fall21" class="form-checkout__input_coupone">
+                                    <button type="button" class="form-checkout__button">Применить</button>
+                                </div>
+                            </div>
+                            <div class="form-checkout__list-products list-products-form">
+                                <div class="list-products-form__item">
+                                    <div class="list-products-form__title">
+                                        <a href="#" class="list-products-form__link">Nike Dunk High SP Iowa Varsity
+                                            Maize
+                                            2020</a>
+                                        <span class="list-products-form__count">(32 шт.)</span>
+                                    </div>
+                                    <div class="list-products-form__price">2 900 ₽</div>
+                                </div>
+                                <div class="list-products-form__item">
+                                    <div class="list-products-form__title">
+                                        <a href="#" class="list-products-form__link">EA Sports x Air VaporMax 2019 Blue
+                                            Special Box</a>
+                                        <span class="list-products-form__count">(3 шт.)</span>
+                                    </div>
+                                    <div class="list-products-form__price">500 ₽</div>
+                                </div>
+                                <div class="list-products-form__item">
+                                    <div class="list-products-form__title">
+                                        <a href="#" class="list-products-form__link">READYMADE x Nike Blazer Mid White
+                                            Camo
+                                            White</a>
+                                        <span class="list-products-form__count">(5 шт.)</span>
+                                    </div>
+                                    <div class="list-products-form__price">3 100 ₽</div>
+                                </div>
+                                <div class="list-products-form__item">
+                                    <div class="list-products-form__title">
+                                        <a href="#" class="list-products-form__link">Nike Air Force 1 ’07 Premium
+                                            Popcorn</a>
+                                        <span class="list-products-form__count">(1 шт.)</span>
+                                    </div>
+                                    <div class="list-products-form__price">22 100 ₽</div>
+                                </div>
+                            </div>
+                            <div class="form-checkout__total total-checkout">
+                                <div class="total-checkout__item">
+                                    <span>Итого</span>
+                                    <span>43 900 ₽ </span>
+                                </div>
+                                <div class="total-checkout__item total-checkout__item_coupone">
+                                    <span>Промокод</span>
+                                    <span>-2 400 ₽ </span>
+                                </div>
+                                <div class="total-checkout__item total-checkout__item_total">
+                                    <span>К оплате</span>
+                                    <span>41 500 ₽ </span>
+                                </div>
+                            </div>
+                            <div class="form-checkout__footer footer-form-checkout">
+                                <div class="footer-form-checkout__privacy">
+                                    Нажимая на кнопку «Оформить заказ», вы принимаете <a href="#">условия публичной
+                                        оферты</a>.
+                                </div>
+                                <button type="submit" class="footer-form-checkout__button button button_orange">Оформить
+                                    заказ</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

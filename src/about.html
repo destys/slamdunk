@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"О Нас"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            <div class="about about_page">
+                <div class="about__container">
+                    <h1 class="about__title section-title">
+                        Slamdunk<span class="title-dot">.</span>shop <br>
+                        основан 9 мая 2017 года
+                    </h1>
+                    <div class="about__content">
+                        <p>День Рождения Slamdunk.shop был 9 мая 2017 года. Он был открыт двумя амбициозными
+                            людьми, оба из которых имели длительный опыт работы в области спортивных товаров, а
+                            также были сумасшедшими коллекционерами кроссовок, поскольку они оба чувствовали,
+                            что нет альтернативы крупным розничным сетям, доминирующим на рынке в крупных
+                            городах. </p>
+                        <div class="about__images">
+                            <div class="about__img">
+                                <img src="@img/about/person-1.jpg" alt="person">
+                                <div class="about__name">
+                                    <span>Антон Белоусов</span>
+                                    <span>Основатель</span>
+                                </div>
+                            </div>
+                            <div class="about__img">
+                                <img src="@img/about/person-2.jpg" alt="person">
+                                <div class="about__name">
+                                    <span>Игорь Пыженков</span>
+                                    <span>Основатель</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            После успешной поездки в Гонг-Конг, которая принесла вдохновение и некоторые
+                            эксклюзивные товары, отсутствующие на российском рынке, Slamdunk.shop родился. Позже,
+                            после накопления должного опыта, интернет-магазин Slamdunk.shop стал выполнять любые
+                            запросы клиентов о поиске, проверке и доставке кроссовок и спортивной атрибутики по
+                            всему миру.
+                        </p>
+                    </div>
+                </div>
+                <section class="about__futures futures-about futures-about_black">
+                    <div class="futures-about__container">
+                        <h2 class="futures-about__section-title section-title">Slamdunk<span
+                                class="title-dot">.</span>Shop
+                            2022</h2>
+                        <div class="futures-about__list">
+                            <div class="futures-about__item">
+                                <div class="futures-about__title"><span class="futures-about__title_orange">5</span>
+                                    лет
+                                    работы</div>
+                                <div class="futures-about__text">чтобы у вас было все, что душе угодно</div>
+                            </div>
+                            <div class="futures-about__item">
+                                <div class="futures-about__title">><span class="futures-about__title_orange">10
+                                        000</span> клиентов</div>
+                                <div class="futures-about__text">возвращаются к нам повторно и рекомендуют
+                                    друзьям</div>
+                            </div>
+                            <div class="futures-about__item">
+                                <div class="futures-about__title">><span class="futures-about__title_orange">1
+                                        млн</span> товаров</div>
+                                <div class="futures-about__text">а то и больше, если хорошенько поискать:)
+                                    <span class="_orange" data-popup="#search-form">поискать</span>?</div>
+                            </div>
+                            <div class="futures-about__item">
+                                <div class="futures-about__title">><span class="futures-about__title_orange">84%</span>
+                                    крутости</div>
+                                <div class="futures-about__text">крутой сервис, крутые товары, крутецкие
+                                    покупатели!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

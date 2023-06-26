@@ -70,6 +70,7 @@
 		"webpack-stream": "latest"
 	},
 	"dependencies": {
+		"intl-tel-input": "^17.0.21",
 		"simplebar": "latest"
 	}
 }

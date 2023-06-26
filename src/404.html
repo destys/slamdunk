@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"О Нас"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            <section class="error">
+                <div class="error__container">
+                    <div class="error__404">
+                        <img src="@img/404.png" alt="404">
+                    </div>
+                    <h1 class="error__title">
+                        Упс<span class="title-dot">.</span> Что-то пошло не так <span class="title-dot">:(</span>
+                    </h1>
+                    <a href="#" class="error__button button button_orange" data-da=".имя блока, 768">На главную</a>
+                    <div class="error__image">
+                        <img src="@img/error-ball.png" alt="error">
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

@@ -1,0 +1,234 @@
+.payment-methods {
+    padding-top: rem(64);
+
+    @media (min-width: $tablet) {
+        padding-top: 0;
+    }
+    // .payment-methods__container
+    &__container {
+    }
+    // .payment-methods__title
+    &__title {
+        margin-bottom: rem(24);
+        max-width: none;
+    }
+    // .payment-methods__subtitle
+    &__subtitle {
+        @include adaptiveValue("margin-bottom", 144, 24);
+        line-height: math.div(28, 20);
+        font-size: rem(20);
+        @include adaptiveValue("font-size", 20, 14);
+        opacity: 0.8;
+    }
+    // .payment-methods__list
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: rem(37) rem(29);
+        margin-bottom: rem(64);
+
+        @media (min-width: $mobile) {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(rem(250), 1fr));
+            row-gap: rem(144);
+            margin-bottom: rem(144);
+        }
+    }
+    // .payment-methods__item
+    &__item {
+        position: relative;
+        flex: 0 0 9%;
+        height: rem(21);
+
+        &:hover {
+            .item-payment-methods__gray {
+                opacity: 0;
+            }
+            .item-payment-methods__color {
+                opacity: 1;
+            }
+        }
+
+        img {
+            @media (max-width: em(767)) {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        @media (min-width: $mobileSmall) {
+            flex: 0 0 12%;
+        }
+    }
+    // .payment-methods__protection
+    &__protection {
+        @include adaptiveValue("margin-bottom", 144, 64);
+        background-color: #010101;
+        position: relative;
+
+        background: $mainColor url("@img/payment-methods/save-payment-bg.jpg") center center no-repeat;
+        background-size: cover !important;
+    }
+    // .payment-methods__steps
+    &__steps {
+        @include adaptiveValue("margin-bottom", 144, 64);
+    }
+}
+.item-payment-methods {
+    // .item-payment-methods__gray
+    &__gray {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: 0.4s;
+    }
+    // .item-payment-methods__color
+    &__color {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: 0.4s;
+    }
+}
+.protection-payment-methods {
+    // .protection-payment-methods__container
+    &__container {
+    }
+    // .protection-payment-methods__img
+    &__img {
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            @media (min-width: $tablet) {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+    // .protection-payment-methods__content
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        margin: 0 auto;
+        min-height: rem(337);
+        width: 100%;
+        max-width: rem(988);
+        color: #fff;
+
+        @media (min-width: $tablet) {
+            min-height: rem(667);
+        }
+    }
+    // .protection-payment-methods__title
+    &__title {
+        margin: 0 auto rem(16);
+        max-width: rem(786);
+        font-family: $raleway;
+        text-align: center;
+        @include adaptiveValue("font-size", 71, 32);
+
+        .title-dot {
+            opacity: 0;
+            position: relative;
+            right: rem(29.5);
+            font-size: rem(0);
+
+            @media (min-width: $pc) {
+                opacity: 1;
+                font-size: rem(73);
+            }
+        }
+    }
+    // .protection-payment-methods__text
+    &__text {
+        padding: 0 rem(10);
+        line-height: math.div(28, 20);
+        @include adaptiveValue("font-size", 20, 14);
+        text-align: center;
+        opacity: 0.8;
+
+        // .protection-payment-methods__text_orange
+        &_orange {
+            color: $orange;
+        }
+    }
+}
+.steps-payment-methods {
+    // .steps-payment-methods__container
+    &__container {
+    }
+    // .steps-payment-methods__title
+    &__title {
+        margin-bottom: rem(48);
+        max-width: rem(715);
+    }
+    // .steps-payment-methods__list
+    &__list {
+        display: grid;
+        gap: rem(24);
+        grid-template-columns: repeat(auto-fill, minmax(rem(480), 1fr));
+
+        @media (min-width: $mobile) {
+            gap: rem(42) rem(48);
+        }
+    }
+    // .steps-payment-methods__item
+    &__item {
+        display: flex;
+        flex-direction: column;
+        @include adaptiveValue("font-size", 16, 8);
+
+        @media (min-width: $mobile) {
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+}
+.item-steps-payment {
+    // .item-steps-payment__step
+    &__step {
+        max-height: fit-content;
+        font-family: $raleway;
+        font-weight: 900;
+        line-height: math.div(60, 41);
+        @include adaptiveValue("font-size", 41, 24);
+
+        @media (min-width: $mobile) {
+            text-align: center;
+            writing-mode: vertical-lr;
+            transform: rotate(-180deg);
+        }
+    }
+    // .item-steps-payment__num-step
+    &__num-step {
+        color: $orange;
+    }
+    // .item-steps-payment__content
+    &__content {
+    }
+    // .item-steps-payment__title
+    &__title {
+        margin-bottom: rem(8);
+        font-family: $raleway;
+        font-weight: 700;
+        line-height: math.div(32, 24);
+
+        @include adaptiveValue("font-size", 24, 18);
+    }
+    // .item-steps-payment__text
+    &__text {
+        line-height: math.div(28, 20);
+        @include adaptiveValue("font-size", 20, 14);
+        opacity: 0.8;
+    }
+}

@@ -1,0 +1,95 @@
+.login {
+    // .login_page
+    &_page {
+        @include adaptiveValue("margin-top", 114, 32);
+        @include adaptiveValue("margin-bottom", 144, 64);
+
+        .login__title {
+            margin-bottom: rem(32);
+            color: $mainColor;
+            -webkit-text-stroke-width: 0px;
+        }
+
+        .login__body {
+            @include adaptiveValue("padding", 48, 16);
+            background: #f5f6f7;
+            border-radius: 16px;
+        }
+    }
+    // .login__container
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: rem(32);
+
+        @media (min-width: $tablet) {
+            flex-direction: row;
+        }
+    }
+    // .login__body
+    &__body {
+        width: 100%;
+        @media (min-width: $tablet) {
+            width: 50%;
+        }
+    }
+    // .login__title
+    &__title {
+    }
+    // .login__form
+    &__form {
+    }
+    // .login__loss-pass
+    &__loss-pass {
+    }
+}
+.form-login {
+    // .form-login__label
+    &__label {
+    }
+    // .form-login__input
+    &__input {
+    }
+    // .form-login__captcha
+    &__captcha {
+    }
+    // .form-login__footer
+    &__footer {
+    }
+    // .form-login__button
+    &__button {
+    }
+    // .form-login__subtitle
+    &__subtitle {
+    }
+    // .form-login__text
+    &__text {
+    }
+}
+.captcha-login {
+    // .captcha-login__title
+    &__title {
+    }
+    // .captcha-login__label
+    &__label {
+    }
+    // .captcha-login__input
+    &__input {
+    }
+}
+.button {
+    // .button_orange
+    &_orange {
+    }
+}
+.checkbox {
+    // .checkbox__input
+    &__input {
+    }
+    // .checkbox__label
+    &__label {
+    }
+    // .checkbox__text
+    &__text {
+    }
+}

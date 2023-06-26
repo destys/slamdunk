@@ -135,7 +135,7 @@ export function stickyBlock() {
 		//window.addEventListener("resize", stickyBlockActions);
 
 		function stickyBlockActions(e) {
-			const endPoint = (stickyParent.offsetHeight + stickyParent.getBoundingClientRect().top + scrollY) - (offsetTop + stickyBlockItem.offsetHeight + stickyConfig.bottom);
+			const endPoint = (stickyParent.offsetHeight + stickyParent.getBoundingClientRect().top + scrollY) - (offsetTop + stickyBlockItem.offsetHeight + stickyConfig.bottom - 1180);
 			let stickyItemValues = {
 				position: "relative",
 				bottom: "auto",

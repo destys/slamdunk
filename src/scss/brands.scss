@@ -1,0 +1,55 @@
+.brands {
+    margin-left: rem(35);
+    margin-right: rem(35);
+    @include adaptiveValue("margin-bottom", 64, 24);
+
+    .page__size-chart &,
+    .about__brands & {
+        @include adaptiveValue("margin-bottom", 112, 32);
+        display: block !important;
+    }
+    // .brands__container
+    &__container {
+    }
+    // .brands__slider
+    &__slider {
+    }
+    // .brands__wrapper
+    &__wrapper {
+    }
+    // .brands__slide
+    &__slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: rem(86);
+
+        border-radius: 25px;
+
+        transition: 0.2s;
+
+        cursor: pointer;
+
+        svg {
+            width: 80%;
+
+            path {
+                transition: 0.2s;
+            }
+        }
+
+        &:hover {
+            background-color: $red;
+
+            path {
+                fill: #fff;
+            }
+        }
+
+        @media (min-width: $tablet) {
+            /* width: rem(250) !important; */
+            height: rem(140) !important;
+        }
+    }
+}

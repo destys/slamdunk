@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Успешный заказ"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            <div class="order-received">
+                <div class="order-received__container">
+                    <h1 class="order-received__title section-title">Оплата прошла успешно<span
+                            class="title-dot">.</span></h1>
+                    <div class="order-received__details">
+                        <div class="order-received__item">
+                            <span>Номер заказа</span><span>381</span>
+                        </div>
+                        <div class="order-received__item">
+                            <span>Дата</span><span>18.03.2022</span>
+                        </div>
+                        <div class="order-received__item">
+                            <span>E-mail</span><span>pochta@gmail.com</span>
+                        </div>
+                        <div class="order-received__item">
+                            <span>Итого</span><span>4 200 ₽</span>
+                        </div>
+                    </div>
+                    <h3 class="order-received__subtitle">Платежный адрес</h3>
+                    <div class="order-received__payments">
+                        <div class="order-received__item">
+                            <span>Имя</span><span>Даниил</span>
+                        </div>
+                        <div class="order-received__item">
+                            <span>Телефон</span><span>+7 975 532 67 23</span>
+                        </div>
+                        <div class="order-received__item">
+                            <span>E-mail</span><span>pochta@gmail.com</span>
+                        </div>
+                        <div class="order-received__item">
+                            <span>Адрес</span><span>Измайловское шоссе, 47. Москва</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

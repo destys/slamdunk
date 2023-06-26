@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="intro">
+				<div class="intro__wrapper">
+					<h1 class="intro__title"><span class="text-orange">Сервис <span class="text-underline"
+								data-popup="#search-form">поиска</span></span> брендовой спортивной обуви<span
+							class="title-dot">.</span></h1>
+					<div class="intro__img">
+						<img src="@img/intro/intro-img.png" alt="intro" class="_desktop">
+						<img data-src="@img/intro/mobile-intro-img.png" alt="intro-mobile" class="_mobile">
+					</div>
+					<div class="intro__footer footer-intro">
+						<div class="footer-intro__item">
+							<div class="footer-intro__title">Выберите в каталоге</div>
+							<div class="footer-intro__text">Более 9000 оригинальных товаров самых известных брендов
+								adidas, Nike, Asics, Supreme, Puma, Reebok и других.</div>
+							<a href="#" class="footer-intro__btn">Перейти в каталог</a>
+						</div>
+						<div class="footer-intro__separator">
+							<span>или</span>
+						</div>
+						<div class="footer-intro__item">
+							<div class="footer-intro__title">Запросите поиск</div>
+							<div class="footer-intro__text">Не нашли что хотели? Воспользуйтесь бесплатной услугой
+								«Поиск по запросу»! Найдем товар в любой точке мира.</div>
+							<button type="button" href="#" class="footer-intro__btn button"
+								data-popup="#search-form">Поиск по запросу</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			@@include('html/_brands.htm',{})
+			<section class="offer">
+				<div class="offer__container">
+					<h2 class="section-title">
+						Что предлагает
+						Slamdunk<span class="title-dot">.</span>Shop</h2>
+					<div class="offer__list">
+						<div class="offer__item item-offer">
+							<div class="item-offer__icon">
+								<img src="@img/offers/original-product.svg" alt="Только оригинальные товары">
+							</div>
+							<div class="item-offer__title">Только оригинальные товары</div>
+							<div class="item-offer__text">В случае, если вы считаете, что получили поддельный товар,
+								пожалуйста, незамедлительно гарантия и возврат.</div>
+						</div>
+						<div class="offer__item item-offer">
+							<div class="item-offer__icon">
+								<img src="@img/offers/search-all-over-the-world.svg" alt="Поиск в мире по запросу">
+							</div>
+							<div class="item-offer__title">Поиск в мире по запросу</div>
+							<div class="item-offer__text">В случае, если вы считаете, что получили поддельный товар,
+								пожалуйста, незамедлительно свяжитесь с нами.</div>
+						</div>
+						<div class="offer__item item-offer">
+							<div class="item-offer__icon">
+								<img src="@img/offers/free-delivery.svg" alt="Бесплатная доставка по миру">
+							</div>
+							<div class="item-offer__title">Бесплатная доставка по миру</div>
+							<div class="item-offer__text">В случае, если вы считаете, что получили поддельный товар,
+								пожалуйста, незамедлительно свяжитесь с нами.</div>
+						</div>
+						<div class="offer__item item-offer">
+							<div class="item-offer__icon">
+								<img src="@img/offers/original-product.svg" alt="Прозрачная система оплаты">
+							</div>
+							<div class="item-offer__title">Прозрачная система оплаты</div>
+							<div class="item-offer__text">В случае, если вы считаете, что получили поддельный товар,
+								пожалуйста, незамедлительно свяжитесь с нами.</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main-sales">
+				<div class="main-sales__container">
+					<div class="main-sales__slider swiper">
+						<div class="main-sales__wrapper swiper-wrapper">
+							<div class="main-sales__slide swiper-slide slide-sales-main">
+								<div class="slide-sales-main__img">
+									<img src="@img/sales/stock-1.jpg" alt="stock-1">
+								</div>
+								<div class="slide-sales-main__icon">
+									<img src="@img/sales/top-left-icons.svg" alt="top-left-icons">
+								</div>
+								<div class="slide-sales-main__content">
+									<div class="slide-sales-main__title">
+										Новинка Air Jordan XXXV Low
+									</div>
+									<div class="slide-sales-main__text">
+										Невероятно легкая модель поможет преобразовать
+										скорость и силу в максимальные результаты.
+									</div>
+									<a href="#" class="slide-sales-main__btn">Посмотреть</a>
+								</div>
+							</div>
+							<div class="main-sales__slide swiper-slide slide-sales-main">
+								<div class="slide-sales-main__img">
+									<img src="@img/sales/stock-2.jpg" alt="stock-2">
+								</div>
+								<div class="slide-sales-main__icon">
+									<img src="@img/sales/top-left-icons.svg" alt="top-left-icons">
+								</div>
+								<div class="slide-sales-main__content">
+									<div class="slide-sales-main__title">
+										Легендарная история возвращается
+									</div>
+									<div class="slide-sales-main__text">
+										Новая модель — усовершенствованная версия самых легендарных кроссовок в истории.
+									</div>
+									<a href="#" class="slide-sales-main__btn">Посмотреть</a>
+								</div>
+							</div>
+							<div class="main-sales__slide swiper-slide slide-sales-main">
+								<div class="slide-sales-main__img">
+									<img src="@img/sales/stock-3.jpg" alt="stock-3">
+								</div>
+								<div class="slide-sales-main__icon">
+									<img src="@img/sales/top-left-icons-2.svg" alt="top-left-icons-2">
+								</div>
+								<div class="slide-sales-main__content">
+									<div class="slide-sales-main__title">
+										Новая коллекция 2021
+									</div>
+									<div class="slide-sales-main__text">
+										Стадион «Арсенала» в Северном Лондоне — это нечто большее, чем просто домашняя
+										площадка.
+									</div>
+									<a href="#" class="slide-sales-main__btn">Посмотреть</a>
+								</div>
+							</div>
+						</div>
+						<div class="main-sales__mailer mailer-sails">
+							<div class="mailer-sails__content">
+								<div class="mailer-sails__title">
+									<div>Скидка 5%</div>
+									<div class="text-transparent">за подписку</div>
+								</div>
+								<div class="mailer-sails__text">Билет на первую покупку.</div>
+								<div class="mailer-sails__img">
+									<img src="@img/sales/sales-ball.svg" alt="sales-ball">
+								</div>
+							</div>
+							<form action="#" class="mailer-sails__form form-mailes-sails">
+								<div class="form-mailes-sails__field">
+									<input autocomplete="off" type="email" name="form[]" data-error="Ошибка"
+										placeholder="Ваш e-mail" class="form-mailes-sails__input input">
+									<button class="form-mailes-sails__btn">Подписаться</button>
+								</div>
+								<div class="form-mailes-sails__img">
+									<img src="@img/sales/sales-ball-2.svg" alt="sales-ball">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="recommendations">
+				<div class="recommendations__container">
+					<div class="recommendations__tabs">
+						<nav class="recommendations__navigation">
+							<h2 class="section-title">
+								Каталог<span class="title-dot">.</span>
+							</h2>
+							<a href="#" class="recommendations__title">
+								<span>новинки</span><svg width="41" height="48" viewBox="0 0 41 48" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M39.7525 32.1844V32.9344H39.0025L33.0628 32.9344L32.3128 32.9344L32.3128 32.1844V14.0547L7.71302 38.6544L7.18269 39.1848L6.65236 38.6544L2.40972 34.4118L1.87939 33.8815L2.40972 33.3511L27.0095 8.75135L8.87975 8.75135L8.12975 8.75135L8.12975 8.00135L8.12975 2.06166L8.12975 1.31166L8.87975 1.31166L39.0025 1.31165H39.7525V2.06165L39.7525 32.1844Z"
+										stroke="#171717" stroke-width="1.5" />
+								</svg>
+							</a>
+							<a href="#" class="recommendations__title">
+								<span>аксессуары</span><svg width="41" height="48" viewBox="0 0 41 48" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M39.7525 32.1844V32.9344H39.0025L33.0628 32.9344L32.3128 32.9344L32.3128 32.1844V14.0547L7.71302 38.6544L7.18269 39.1848L6.65236 38.6544L2.40972 34.4118L1.87939 33.8815L2.40972 33.3511L27.0095 8.75135L8.87975 8.75135L8.12975 8.75135L8.12975 8.00135L8.12975 2.06166L8.12975 1.31166L8.87975 1.31166L39.0025 1.31165H39.7525V2.06165L39.7525 32.1844Z"
+										stroke="#171717" stroke-width="1.5" />
+								</svg>
+							</a>
+						</nav>
+						<div class="recommendations__content">
+							<div class="recommendations__body body-recommendations">
+								<div class="body-recommendations__list">
+									<a href="#" class="body-recommendations__item">
+										<div class="body-recommendations__img">
+											<img src="@img/catalog/for-men.jpg" alt="">
+										</div>
+										<div class="body-recommendations__title">
+											мужчинам
+											<svg width="41" height="48" viewBox="0 0 41 48" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M39.7525 32.1844V32.9344H39.0025L33.0628 32.9344L32.3128 32.9344L32.3128 32.1844V14.0547L7.71302 38.6544L7.18269 39.1848L6.65236 38.6544L2.40972 34.4118L1.87939 33.8815L2.40972 33.3511L27.0095 8.75135L8.87975 8.75135L8.12975 8.75135L8.12975 8.00135L8.12975 2.06166L8.12975 1.31166L8.87975 1.31166L39.0025 1.31165H39.7525V2.06165L39.7525 32.1844Z"
+													stroke="#fff" stroke-width="1.5" />
+											</svg>
+										</div>
+									</a>
+									<a href="#" class="body-recommendations__item">
+										<div class="body-recommendations__img">
+											<img src="@img/catalog/for-women.jpg" alt="">
+										</div>
+										<div class="body-recommendations__title">
+											женщинам
+											<svg width="41" height="48" viewBox="0 0 41 48" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M39.7525 32.1844V32.9344H39.0025L33.0628 32.9344L32.3128 32.9344L32.3128 32.1844V14.0547L7.71302 38.6544L7.18269 39.1848L6.65236 38.6544L2.40972 34.4118L1.87939 33.8815L2.40972 33.3511L27.0095 8.75135L8.87975 8.75135L8.12975 8.75135L8.12975 8.00135L8.12975 2.06166L8.12975 1.31166L8.87975 1.31166L39.0025 1.31165H39.7525V2.06165L39.7525 32.1844Z"
+													stroke="#fff" stroke-width="1.5" />
+											</svg>
+										</div>
+									</a>
+									<a href="#" class="body-recommendations__item">
+										<div class="body-recommendations__img">
+											<img src="@img/catalog/for-children.jpg" alt="">
+										</div>
+										<div class="body-recommendations__title">
+											детям
+											<svg width="41" height="48" viewBox="0 0 41 48" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M39.7525 32.1844V32.9344H39.0025L33.0628 32.9344L32.3128 32.9344L32.3128 32.1844V14.0547L7.71302 38.6544L7.18269 39.1848L6.65236 38.6544L2.40972 34.4118L1.87939 33.8815L2.40972 33.3511L27.0095 8.75135L8.87975 8.75135L8.12975 8.75135L8.12975 8.00135L8.12975 2.06166L8.12975 1.31166L8.87975 1.31166L39.0025 1.31165H39.7525V2.06165L39.7525 32.1844Z"
+													stroke="#fff" stroke-width="1.5" />
+											</svg>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main-search">
+				<div class="main-search__container">
+					<div class="main-search__img">
+						<img data-src="@img/search-map.png" alt="search-map">
+					</div>
+					<div class="main-search__content">
+						<div class="main-search__ball">
+							<img src="@img/logo-frag-ball.svg" alt="ball">
+						</div>
+						<div class="main-search__text">
+							<h2 class="main-search__title section-title">Поиск в мире по запросу<span
+									class="title-dot">.</span></h2>
+							<button type="submit" class="main-search__button button" data-popup="#search-form">Найти
+								вещь</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main-text">
+				<div data-showmore class="main-text__container">
+					<div data-showmore-content="134" class="main-text__content">
+						<h3>Slamdunk.Shop: Международный сервис поиска брендовой спортивной одежды.</h3>
+						<p>День Рождения Slamdunk.shop был 9 мая 2017 года. Он был открыт двумя амбициозными людьми,
+							оба из
+							которых имели длительный опыт работы в области спортивных товаров, а также были сумасшедшими
+							коллекционерами кроссовок, поскольку они оба чувствовали, что нет альтернативы крупным
+							розничным
+							сетям, доминирующим на рынке в крупных городах.</p>
+						<p>День Рождения Slamdunk.shop был 9 мая 2017 года. Он был открыт двумя амбициозными людьми,
+							оба из
+							которых имели длительный опыт работы в области спортивных товаров, а также были сумасшедшими
+							коллекционерами кроссовок, поскольку они оба чувствовали, что нет альтернативы крупным
+							розничным
+							сетям, доминирующим на рынке в крупных городах.</p>
+						<p>День Рождения Slamdunk.shop был 9 мая 2017 года. Он был открыт двумя амбициозными людьми,
+							оба из
+							которых имели длительный опыт работы в области спортивных товаров, а также были сумасшедшими
+							коллекционерами кроссовок, поскольку они оба чувствовали, что нет альтернативы крупным
+							розничным
+							сетям, доминирующим на рынке в крупных городах.</p>
+					</div>
+					<button hidden data-showmore-button type="button" class="main-text__more"><span>Показать
+							еще</span><span>Скрыть</span></button>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

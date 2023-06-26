@@ -1,0 +1,42 @@
+.order-received {
+    @include adaptiveValue("margin-top", 114, 32);
+    @include adaptiveValue("margin-bottom", 144, 64);
+    // .order-received__container
+    &__container {
+        max-width: rem(693);
+    }
+    // .order-received__title
+    &__title {
+    }
+    // .order-received__details
+    &__details {
+        margin-bottom: rem(32);
+        padding-bottom: rem(32);
+        
+        border-bottom: 5px solid $mainColor;
+
+        @media (min-width: $tablet) {
+            margin-bottom: rem(64);
+            padding-bottom: rem(64);
+        }
+    }
+    // .order-received__item
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        line-height: math.div(26, 20);
+        @include adaptiveValue("font-size", 20, 14);
+
+        &:not(:last-child) {
+            margin-bottom: rem(24);
+        }
+    }
+    // .order-received__subtitle
+    &__subtitle {
+        margin-bottom: rem(32);
+        font-family: $raleway;
+        font-weight: 900;
+        line-height: math.div(50, 42);
+        @include adaptiveValue("font-size", 42, 21);
+    }
+}

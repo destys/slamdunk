@@ -1,0 +1,64 @@
+.error {
+    @include adaptiveValue("margin-top", 64, 32);
+    @include adaptiveValue("margin-bottom", 144, 48);
+
+    // .error__container
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    // .error__404
+    &__404 {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, 0px);
+
+        width: 100%;
+        z-index: -1;
+
+        img {
+            width: 100%;
+        }
+
+        @media (min-width: $tablet) {
+            top: 0;
+        }
+    }
+    // .error__title
+    &__title {
+        font-family: $raleway;
+        font-weight: 900;
+        @include adaptiveValue("font-size", 88, 40);
+        max-width: rem(756);
+        text-align: center;
+
+        @media (min-width: $tablet) {
+            padding-top: rem(92);
+        }
+    }
+    // .error__button
+    &__button {
+        margin: rem(32) auto;
+        width: rem(256);
+        min-width: rem(256);
+    }
+    // .error__image
+    &__image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            display: block;
+            width: 100%;
+            max-width: rem(170);
+
+            @media (min-width: $mobile) {
+                max-width: none;
+            }
+        }
+    }
+}

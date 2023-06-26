@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Благотворительность"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            <div class="charity">
+                <section class="charity__header header-charity">
+                    <div class="header-charity_img">
+                        <img data-src="@img/charity/charity-header-img.jpg" alt="charity-header-img">
+                    </div>
+                    <div class="header-charity__container">
+                        <div class="header-charity__content">
+                            <h1 class="header-charity__title section-title">
+                                Благотворительность Slamdunk<span class="title-dot">.</span>shop</h1>
+                            <div class="header-charity__text">Мы считаем что поддерживать нуждающихся людей это важно,
+                                поэтому 5% с каждой продажи мы начали перечислять в благотворительные фонды.</div>
+                        </div>
+                    </div>
+                </section>
+                <ul class="charity__fonds fonds-charity">
+                    <li class="fonds-charity__item">
+                        <img src="@img/charity/logo-needhelp.png" alt="logo-needhelp">
+                    </li>
+                    <li class="fonds-charity__item">
+                        <img src="@img/charity/logo-cloud.png" alt="logo-needhelp">
+                    </li>
+                </ul>
+                <div class="charity__total total-charity">
+                    <h2 class="total-charity__title">Всего собранно</h2>
+                    <div class="total-charity__counter">
+                        <div class="tick" data-value="1220000" data-did-init="handleTickInit">
+
+                            <div data-layout="horizontal center" data-repeat="true"
+                                data-transform="arrive(1900, 1) -> round -> pad('   ') -> split -> delay(rtl, 10, 15)">
+
+                                <span data-view="flip"></span>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="total-charity__currency">рублей</div>
+                </div>
+            </div>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+    <script>
+        function handleTickInit(tick) {
+
+            // set final value, tick will animate towards it
+            setTimeout(function () {
+                tick.value = 1348627;
+            }, 100);
+
+            // play with arrive() values to tune animation speed and duration
+            // 1. first value is maximum speed of increase
+            // 2. second value is speed at which the increase ramps up
+
+        }
+    </script>
+</body>
+
+</html>

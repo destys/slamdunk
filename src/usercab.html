@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Личный кабинет"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            <div class="usercab">
+                <div class="usercab__container">
+                    <h1 class="usercab__title section-title">Личный кабинет<span class="title-dot">.</span></h1>
+                    <select name="form[]" class="blog__select">
+                        <option value="1" selected>Моя информация</option>
+                        <option value="2">Мои заказы</option>
+                        <option value="3">Адреса доставки</option>
+                        <option value="4">Избранное</option>
+                    </select>
+                    <div data-tabs data-tabs-animate="500" class="usercab__content content-usercab">
+                        <nav data-tabs-titles class="content-usercab__navigation">
+                            <button type="button" class="content-usercab__title _tab-active">Моя информация</button>
+                            <button type="button" class="content-usercab__title">Мои заказы</button>
+                            <button type="button" class="content-usercab__title">Адреса доставки</button>
+                            <button type="button" class="content-usercab__title">Избранное</button>
+                        </nav>
+                        <div data-tabs-body class="content-usercab__content">
+                            <div class="content-usercab__body personal-information">
+                                <form action="#" class="personal-information__form">
+                                    <div class="personal-information__fields">
+                                        <label class="personal-information__label">
+                                            <span>Имя и фамилия</span>
+                                            <div class="personal-information__group" data-popup="#change-name">
+                                                <input autocomplete="off" type="text" name="usercab-name"
+                                                    data-error="Ошибка" placeholder="Иван Иванов"
+                                                    class="personal-information__input input" value="Pavel Nesterov"
+                                                    disabled>
+                                                <button type="button" class="personal-information__change"><svg
+                                                        width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M2.15277 9.16661C2.05215 9.26784 1.98671 9.39871 1.9661 9.53995L1.33944 13.9066C1.32398 14.0091 1.3328 14.1138 1.36519 14.2122C1.39758 14.3107 1.45264 14.4002 1.52593 14.4735C1.59922 14.5467 1.68869 14.6018 1.78714 14.6342C1.8856 14.6666 1.99028 14.6754 2.09277 14.6599L6.45944 14.0333C6.60066 14.0127 6.73154 13.9472 6.83277 13.8466L11.9794 8.70661L7.29277 4.02661L2.15277 9.16661Z"
+                                                            fill="#171717" />
+                                                        <path
+                                                            d="M9.01161 2.30679L8.23828 3.08012L12.9183 7.76013L13.6983 6.98679C16.7869 3.88212 12.1024 -0.784018 9.01161 2.30679Z"
+                                                            fill="#171717" />
+                                                    </svg></button>
+                                            </div>
+                                        </label>
+                                        <label class="personal-information__label">
+                                            <span>Е-mail</span>
+                                            <div class="personal-information__group" data-popup="#change-email">
+                                                <input autocomplete="off" type="email" name="usercab-email"
+                                                    data-error="Ошибка" placeholder="mail@example.com"
+                                                    class="personal-information__input input" value="nesterov@gmail.com"
+                                                    disabled>
+                                                <button type="button" class="personal-information__change"><svg
+                                                        width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M2.15277 9.16661C2.05215 9.26784 1.98671 9.39871 1.9661 9.53995L1.33944 13.9066C1.32398 14.0091 1.3328 14.1138 1.36519 14.2122C1.39758 14.3107 1.45264 14.4002 1.52593 14.4735C1.59922 14.5467 1.68869 14.6018 1.78714 14.6342C1.8856 14.6666 1.99028 14.6754 2.09277 14.6599L6.45944 14.0333C6.60066 14.0127 6.73154 13.9472 6.83277 13.8466L11.9794 8.70661L7.29277 4.02661L2.15277 9.16661Z"
+                                                            fill="#171717" />
+                                                        <path
+                                                            d="M9.01161 2.30679L8.23828 3.08012L12.9183 7.76013L13.6983 6.98679C16.7869 3.88212 12.1024 -0.784018 9.01161 2.30679Z"
+                                                            fill="#171717" />
+                                                    </svg></button>
+                                            </div>
+                                        </label>
+                                        <label class="personal-information__label">
+                                            <span>Телефон</span>
+                                            <div class="personal-information__group" data-popup="#change-phone">
+                                                <input autocomplete="off" type="tel" name="usercab-phone"
+                                                    data-error="Ошибка" placeholder="+7 (999) 999-99-99"
+                                                    class="personal-information__input input" value="+7 (976) 651 12 71"
+                                                    disabled>
+                                                <button type="button" class="personal-information__change"><svg
+                                                        width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M2.15277 9.16661C2.05215 9.26784 1.98671 9.39871 1.9661 9.53995L1.33944 13.9066C1.32398 14.0091 1.3328 14.1138 1.36519 14.2122C1.39758 14.3107 1.45264 14.4002 1.52593 14.4735C1.59922 14.5467 1.68869 14.6018 1.78714 14.6342C1.8856 14.6666 1.99028 14.6754 2.09277 14.6599L6.45944 14.0333C6.60066 14.0127 6.73154 13.9472 6.83277 13.8466L11.9794 8.70661L7.29277 4.02661L2.15277 9.16661Z"
+                                                            fill="#171717" />
+                                                        <path
+                                                            d="M9.01161 2.30679L8.23828 3.08012L12.9183 7.76013L13.6983 6.98679C16.7869 3.88212 12.1024 -0.784018 9.01161 2.30679Z"
+                                                            fill="#171717" />
+                                                    </svg></button>
+                                            </div>
+                                        </label>
+                                        <label class="personal-information__label">
+                                            <span>Дата рождения</span>
+                                            <div class="personal-information__group" data-popup="#change-date">
+                                                <input autocomplete="off" type="date" name="usercab-date"
+                                                    data-error="Ошибка" placeholder="ДД.ММ.ГГГГ"
+                                                    class="personal-information__input input" value="" disabled>
+                                                <button type="button" class="personal-information__change"><svg
+                                                        width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M2.15277 9.16661C2.05215 9.26784 1.98671 9.39871 1.9661 9.53995L1.33944 13.9066C1.32398 14.0091 1.3328 14.1138 1.36519 14.2122C1.39758 14.3107 1.45264 14.4002 1.52593 14.4735C1.59922 14.5467 1.68869 14.6018 1.78714 14.6342C1.8856 14.6666 1.99028 14.6754 2.09277 14.6599L6.45944 14.0333C6.60066 14.0127 6.73154 13.9472 6.83277 13.8466L11.9794 8.70661L7.29277 4.02661L2.15277 9.16661Z"
+                                                            fill="#171717" />
+                                                        <path
+                                                            d="M9.01161 2.30679L8.23828 3.08012L12.9183 7.76013L13.6983 6.98679C16.7869 3.88212 12.1024 -0.784018 9.01161 2.30679Z"
+                                                            fill="#171717" />
+                                                    </svg></button>
+                                            </div>
+                                        </label>
+                                        <label class="personal-information__label">
+                                            <span>Ваш пол</span>
+                                            <div class="personal-information__options options-personal">
+                                                <div class="options-person__item">
+                                                    <input hidden id="o_1" class="options-person__input" checked
+                                                        type="radio" value="1" name="option">
+                                                    <label for="o_1" class="options-person__label"><span
+                                                            class="options-person__text">Муж.</span></label>
+                                                </div>
+                                                <div class="options-person__item">
+                                                    <input hidden id="o_2" class="options-person__input" type="radio"
+                                                        value="2" name="option">
+                                                    <label for="o_2" class="options-person__label"><span
+                                                            class="options-person__text">Жен.</span></label>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="personal-information__actions">
+                                        <button type="submit"
+                                            class="personal-information__button button button_orange">Сохранить</button>
+                                        <button type="button"
+                                            class="personal-information__button personal-information__button_change-password"
+                                            data-popup="#change-password">Изменить
+                                            пароль</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="content-usercab__body order-history">
+                                <div class="order-history__item item-order-history num-1">
+                                    <div class="item-order-history__header">
+                                        <div class="item-order-history__left">
+                                            <div class="item-order-history__date">29 октября 2021</div>
+                                            <div class="item-order-history__number">№ RU312908-854589</div>
+                                        </div>
+                                        <div class="item-order-history__right" data-da=".num-1 .item-order-history__footer, 767">
+                                            <div class="item-order-history__status">Ожидает оплаты</div>
+                                            <div class="item-order-history__total">21 168 ₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-order-history__list">
+                                        @@include('html/_product.htm',{
+                                        "image":"product-img-5.png",
+                                        "category":"Футболки",
+                                        "title":"Aime Leon Dore League Shirt Yellow",
+                                        "price":"33 060 – 57 760 <span>₽</span>"
+                                        })
+                                        @@include('html/_product.htm',{
+                                        "image":"product-img-6.png",
+                                        "category":"Мужские кроссовки",
+                                        "title":"Nike Dunk Mid Pro SB Griptape With Strap",
+                                        "price":"33 060 – 57 760 <span>₽</span>"
+                                        })
+                                    </div>
+                                    <div class="item-order-history__footer"></div>
+                                </div>
+                                <div class="order-history__item item-order-history num-2">
+                                    <div class="item-order-history__header">
+                                        <div class="item-order-history__left">
+                                            <div class="item-order-history__date">6 июнь 2020</div>
+                                            <div class="item-order-history__number">№ RU257357-156472</div>
+                                        </div>
+                                        <div class="item-order-history__right" data-da=".num-2 .item-order-history__footer, 767">
+                                            <div class="item-order-history__status item-order-history__status_ready">
+                                                Доставлен</div>
+                                            <div class="item-order-history__total">1 220 ₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-order-history__list">
+                                        @@include('html/_product.htm',{
+                                        "image":"product-img-2.png",
+                                        "category":"Кимоно",
+                                        "title":"BAPE 1st Camo Kimono Long Shirt Green",
+                                        "price":"35 000 <span>₽</span>"
+                                        })
+                                        @@include('html/_product.htm',{
+                                        "image":"product-img-3.png",
+                                        "category":"Мужские кроссовки",
+                                        "title":"Nike Dunk Mid Pro SB White Widow",
+                                        "price":"33 060 – 57 760 <span>₽</span>"
+                                        })
+                                        @@include('html/_product.htm',{
+                                        "image":"product-img-4.png",
+                                        "category":"Худи",
+                                        "title":"Awake Gel Logo Hoodie Green",
+                                        "price":"57 760 <span>₽</span>"
+                                        })
+                                    </div>
+                                    <div class="item-order-history__footer"></div>
+                                </div>
+                                <div class="order-history__item item-order-history num-3">
+                                    <div class="item-order-history__header">
+                                        <div class="item-order-history__left">
+                                            <div class="item-order-history__date">8 май 2020</div>
+                                            <div class="item-order-history__number">№ RU756987-324646</div>
+                                        </div>
+                                        <div class="item-order-history__right" data-da=".num-3 .item-order-history__footer, 767">
+                                            <div class="item-order-history__status item-order-history__status_ready">
+                                                Доставлен</div>
+                                            <div class="item-order-history__total">32 470 ₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-order-history__list">
+                                        @@include('html/_product.htm',{
+                                        "image":"product-img-3.png",
+                                        "category":"Мужские кроссовки",
+                                        "title":"Nike Dunk Mid Pro SB White Widow",
+                                        "price":"33 060 – 57 760 <span>₽</span>"
+                                        })
+                                        @@include('html/_product.htm',{
+                                        "image":"product-img-4.png",
+                                        "category":"Худи",
+                                        "title":"Awake Gel Logo Hoodie Green",
+                                        "price":"57 760 <span>₽</span>"
+                                        })
+                                        @@include('html/_product.htm',{
+                                        "image":"product-img-5.png",
+                                        "category":"Футболки",
+                                        "title":"Aime Leon Dore League Shirt Yellow",
+                                        "price":"33 060 – 57 760 <span>₽</span>"
+                                        })
+                                        @@include('html/_product.htm',{
+                                        "image":"product-img-6.png",
+                                        "category":"Мужские кроссовки",
+                                        "title":"Nike Dunk Mid Pro SB Griptape With Strap",
+                                        "price":"33 060 – 57 760 <span>₽</span>"
+                                        })
+                                        @@include('html/_product.htm',{
+                                        "image":"product-img-1.png",
+                                        "category":"Мужские кроссовки",
+                                        "title":"Nike Dunk Mid Pro SB White Widow",
+                                        "price":"33 060 – 57 760 <span>₽</span>"
+                                        })
+                                        @@include('html/_product.htm',{
+                                        "image":"product-img-2.png",
+                                        "category":"Кимоно",
+                                        "title":"BAPE 1st Camo Kimono Long Shirt Green",
+                                        "price":"35 000 <span>₽</span>"
+                                        })
+                                    </div>
+                                    <div class="item-order-history__footer"></div>
+                                </div>
+                            </div>
+                            <div class="content-usercab__body delivery-address">
+                                <form action="#" class="delivery-address__form">
+                                    <div class="delivery-address__fields">
+                                        <div class="delivery-address__item">
+                                            <label for="" class="delivery-address__label">Страна</label>
+                                            <select name="form[]" class="delivery-address__select">
+                                                <option value="1" selected>Россия</option>
+                                                <option value="2">Беларусь</option>
+                                                <option value="3">Казахстан</option>
+                                                <option value="4">Киргистан</option>
+                                                <option value="5">Туркменистан</option>
+                                            </select>
+                                        </div>
+                                        <div class="delivery-address__item">
+                                            <label for="" class="delivery-address__label">Город</label>
+                                            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                                placeholder="Барнаул" class="delivery-address__input input">
+                                        </div>
+                                        <div class="delivery-address__item">
+                                            <label for="" class="delivery-address__label">Улица</label>
+                                            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                                placeholder="Весенняя" class="delivery-address__input input"
+                                                value="Весенняя">
+                                        </div>
+                                        <div class="delivery-address__item">
+                                            <label for="" class="delivery-address__label">Дом</label>
+                                            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                                placeholder="Номер дома" class="delivery-address__input input">
+                                        </div>
+                                        <div class="delivery-address__item">
+                                            <label for="" class="delivery-address__label">Почтовый индекс</label>
+                                            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                                placeholder="000000" class="delivery-address__input input"
+                                                value="656000">
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="delivery-address__button button">Сохранить</button>
+                                </form>
+                            </div>
+                            <div class="content-usercab__body favorites">
+                                <div class="favorites__list">
+                                    @@include('html/_product.htm',{
+                                    "image":"product-img-3.png",
+                                    "category":"Мужские кроссовки",
+                                    "title":"Nike Dunk Mid Pro SB White Widow",
+                                    "price":"33 060 – 57 760 <span>₽</span>"
+                                    })
+                                    @@include('html/_product.htm',{
+                                    "image":"product-img-4.png",
+                                    "category":"Худи",
+                                    "title":"Awake Gel Logo Hoodie Green",
+                                    "price":"57 760 <span>₽</span>"
+                                    })
+                                    @@include('html/_product.htm',{
+                                    "image":"product-img-5.png",
+                                    "category":"Футболки",
+                                    "title":"Aime Leon Dore League Shirt Yellow",
+                                    "price":"33 060 – 57 760 <span>₽</span>"
+                                    })
+                                    @@include('html/_product.htm',{
+                                    "image":"product-img-6.png",
+                                    "category":"Мужские кроссовки",
+                                    "title":"Nike Dunk Mid Pro SB Griptape With Strap",
+                                    "price":"33 060 – 57 760 <span>₽</span>"
+                                    })
+                                    @@include('html/_product.htm',{
+                                    "image":"product-img-1.png",
+                                    "category":"Мужские кроссовки",
+                                    "title":"Nike Dunk Mid Pro SB White Widow",
+                                    "price":"33 060 – 57 760 <span>₽</span>"
+                                    })
+                                    @@include('html/_product.htm',{
+                                    "image":"product-img-2.png",
+                                    "category":"Кимоно",
+                                    "title":"BAPE 1st Camo Kimono Long Shirt Green",
+                                    "price":"35 000 <span>₽</span>"
+                                    })
+                                    @@include('html/_product.htm',{
+                                    "image":"product-img-3.png",
+                                    "category":"Мужские кроссовки",
+                                    "title":"Nike Dunk Mid Pro SB White Widow",
+                                    "price":"33 060 – 57 760 <span>₽</span>"
+                                    })
+                                    @@include('html/_product.htm',{
+                                    "image":"product-img-4.png",
+                                    "category":"Худи",
+                                    "title":"Awake Gel Logo Hoodie Green",
+                                    "price":"57 760 <span>₽</span>"
+                                    })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

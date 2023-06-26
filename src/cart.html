@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Корзина"
+})
+
+<body class="page_cart">
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            <div class="cart">
+                <div class="cart__container">
+                    <div class="cart__header header-cart">
+                        <h1 class="header-cart__title section-title _mb0">Корзина<span class="title-dot">.</span></h1>
+                        <span class="header-cart__count">5 товаров</span>
+                    </div>
+                    <div class="cart__wrapper">
+                        <div class="cart__list">
+                            @@include('html/_product.htm',{
+                            "image":"product-img-1.png",
+                            "category":"Мужские кроссовки",
+                            "title":"Nike Dunk Mid Pro SB White Widow",
+                            "price":"33 060 – 57 760 <span>₽</span>"
+                            })
+                            @@include('html/_product.htm',{
+                            "image":"product-img-2.png",
+                            "category":"Кимоно",
+                            "title":"BAPE 1st Camo Kimono Long Shirt Green",
+                            "price":"35 000 <span>₽</span>"
+                            })
+                            @@include('html/_product.htm',{
+                            "image":"product-img-3.png",
+                            "category":"Мужские кроссовки",
+                            "title":"Nike Dunk Mid Pro SB White Widow",
+                            "price":"33 060 – 57 760 <span>₽</span>"
+                            })
+                            @@include('html/_product.htm',{
+                            "image":"product-img-4.png",
+                            "category":"Худи",
+                            "title":"Awake Gel Logo Hoodie Green",
+                            "price":"57 760 <span>₽</span>"
+                            })
+                            @@include('html/_product.htm',{
+                            "image":"product-img-5.png",
+                            "category":"Футболки",
+                            "title":"Aime Leon Dore League Shirt Yellow",
+                            "price":"33 060 – 57 760 <span>₽</span>"
+                            })
+                            @@include('html/_product.htm',{
+                            "image":"product-img-6.png",
+                            "category":"Мужские кроссовки",
+                            "title":"Nike Dunk Mid Pro SB Griptape With Strap",
+                            "price":"33 060 – 57 760 <span>₽</span>"
+                            })
+                            @@include('html/_product.htm',{
+                            "image":"product-img-1.png",
+                            "category":"Мужские кроссовки",
+                            "title":"Nike Dunk Mid Pro SB White Widow",
+                            "price":"33 060 – 57 760 <span>₽</span>"
+                            })
+                            @@include('html/_product.htm',{
+                            "image":"product-img-2.png",
+                            "category":"Кимоно",
+                            "title":"BAPE 1st Camo Kimono Long Shirt Green",
+                            "price":"35 000 <span>₽</span>"
+                            })
+                            @@include('html/_product.htm',{
+                            "image":"product-img-3.png",
+                            "category":"Мужские кроссовки",
+                            "title":"Nike Dunk Mid Pro SB White Widow",
+                            "price":"33 060 – 57 760 <span>₽</span>"
+                            })
+                        </div>
+                        <form action="#" class="cart__sidebar sidebar-cart">
+                            <div class="sidebar-cart__title">Ваша корзина</div>
+                            <div class="sidebar-cart__products">
+                                <div class="sidebar-cart__item item-sidebar-cart">
+                                    <a href="#" class="item-sidebar-cart__title">Awake Gel Logo Hoodie Green</a>
+                                    <div class="item-sidebar-cart__price">56 160 ₽</div>
+                                </div>
+                                <div class="sidebar-cart__item item-sidebar-cart">
+                                    <a href="#" class="item-sidebar-cart__title">Awake Gel Logo Hoodie Green</a>
+                                    <div class="item-sidebar-cart__price">56 160 ₽</div>
+                                </div>
+                                <div class="sidebar-cart__item item-sidebar-cart">
+                                    <a href="#" class="item-sidebar-cart__title">Awake Gel Logo Hoodie Green</a>
+                                    <div class="item-sidebar-cart__price">56 160 ₽</div>
+                                </div>
+                                <div class="sidebar-cart__item item-sidebar-cart">
+                                    <a href="#" class="item-sidebar-cart__title">Awake Gel Logo Hoodie Green</a>
+                                    <div class="item-sidebar-cart__price">56 160 ₽</div>
+                                </div>
+                                <div class="sidebar-cart__item item-sidebar-cart">
+                                    <a href="#" class="item-sidebar-cart__title">Awake Gel Logo Hoodie Green</a>
+                                    <div class="item-sidebar-cart__price">56 160 ₽</div>
+                                </div>
+                                <div class="sidebar-cart__item item-sidebar-cart">
+                                    <a href="#" class="item-sidebar-cart__title">Awake Gel Logo Hoodie Green</a>
+                                    <div class="item-sidebar-cart__price">56 160 ₽</div>
+                                </div>
+                                <div class="sidebar-cart__item item-sidebar-cart">
+                                    <a href="#" class="item-sidebar-cart__title">Awake Gel Logo Hoodie Green</a>
+                                    <div class="item-sidebar-cart__price">56 160 ₽</div>
+                                </div>
+                                <div class="sidebar-cart__item item-sidebar-cart">
+                                    <a href="#" class="item-sidebar-cart__title">Awake Gel Logo Hoodie Green</a>
+                                    <div class="item-sidebar-cart__price">56 160 ₽</div>
+                                </div>
+                            </div>
+                            <div class="sidebar-cart__footer">
+                                <span>Общая стоимость</span>
+                                <span>56 160 ₽</span>
+                            </div>
+                            <button type="submit" class="sidebar-cart__button button button_orange">Оформить
+                                заказ</button>
+                            <div class="sidebar-cart__text">Способы и время доставки можно выбрать при оформлении заказа
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Вход/Регистрация"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            <div class="login login_page">
+                <div class="login__container">
+                    <div class="login__body">
+                        <div class="login__title">Авторизация</div>
+                        <form action="#" class="login__form form-login">
+                            <label for="" class="form-login__label">Имя пользователя или email</label>
+                            <input autocomplete="off" type="email" name="form[]" data-error="Ошибка"
+                                placeholder="Например, pochta@gmail.com" class="form-login__input input">
+                            <label for="" class="form-login__label">Пароль</label>
+                            <input autocomplete="off" type="password" name="form[]" data-error="Ошибка" placeholder=""
+                                class="form-login__input input">
+                            <div class="form-login__captcha captcha-login">
+                                <div class="captcha-login__title">Введите ответ цифрами</div>
+                                <label for="" class="captcha-login__label">
+                                    <span>17 + 20 =</span>
+                                    <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                        placeholder="" class="captcha-login__input input">
+                                </label>
+                            </div>
+                            <div class="form-login__footer">
+                                <button type="submit" class="form-login__button button button_orange">Войти</button>
+                                <div class="checkbox">
+                                    <input id="login_1" data-error="Ошибка" class="checkbox__input" type="checkbox"
+                                        value="1" name="form[]">
+                                    <label for="login_1" class="checkbox__label"><span class="checkbox__text">Запомнить
+                                            меня</span></label>
+                                </div>
+                            </div>
+                        </form>
+                        <button type="button" class="login__loss-pass" data-popup="#loss-password">Забыли
+                            пароль?</button>
+                    </div>
+                    <div class="login__body">
+                        <div class="login__title">Регистрация</div>
+                        <form action="#" class="login__form form-login">
+                            <div class="form-login__subtitle">Пароль будет отправлен вам на вашу почту</div>
+                            <label for="" class="form-login__label">Email</label>
+                            <input autocomplete="off" type="email" name="form[]" data-error="Ошибка"
+                                placeholder="Например, pochta@gmail.com" class="form-login__input input">
+                            <div class="form-login__captcha captcha-login">
+                                <div class="captcha-login__title">Введите ответ цифрами</div>
+                                <label for="" class="captcha-login__label">
+                                    <span>17 + 20 =</span>
+                                    <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                        placeholder="" class="captcha-login__input input">
+                                </label>
+                            </div>
+                            <div class="form-login__text">
+                                Ваши личные данные будут использоваться для упрощения вашей работы с сайтом, управления
+                                доступом к вашей учётной записи и для других целей, описанных в нашей <a
+                                    href="#">политика
+                                    конфиденциальности</a>
+                            </div>
+                            <div class="checkbox">
+                                <input id="reg_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+                                    name="form[]" checked>
+                                <label for="reg_1" class="checkbox__label"><span class="checkbox__text">Подписаться
+                                        на рассылку новостей!</span></label>
+                            </div>
+                            <button type="submit"
+                                class="form-login__button button button_orange">Зарегистрироваться</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

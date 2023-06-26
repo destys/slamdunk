@@ -1,0 +1,180 @@
+.size-chart {
+    // .size-chart__container
+    &__container {
+        &:first-child {
+            padding-top: rem(64);
+        }
+        &:last-child{
+            padding-right: 0;
+
+            @media (min-width:$mobile){
+                 padding-right: rem(16); 
+            }
+        }
+    }
+    // .size-chart__subtitle
+    &__subtitle {
+        @include adaptiveValue("margin-bottom", 48, 24);
+        font-family: $raleway;
+        font-weight: 700;
+        line-height: math.div(32, 24);
+        font-size: rem(24);
+    }
+    // .size-chart__table
+    &__table {
+        @include adaptiveValue("margin-bottom", 144, 64);
+    }
+    // .size-chart__tabs
+    &__tabs {
+    }
+    // .size-chart__header
+    &__header {
+    }
+    // .size-chart__navigation
+    &__navigation {
+        display: flex;
+        @include adaptiveValue("gap", 48, 24);
+        @include adaptiveValue("margin-bottom", 49, 24);
+        padding-bottom: rem(10);
+        overflow-x: auto;
+    }
+    // .size-chart__title
+    &__title {
+        font-family: $raleway;
+        font-weight: 900;
+        @include adaptiveValue("font-size", 40, 24);
+        text-transform: lowercase;
+        transition: 0.2s;
+
+        &._tab-active,
+        &:hover {
+            color: $orange;
+        }
+    }
+    // .size-chart__content
+    &__content {
+    }
+    // .size-chart__body
+    &__body {
+    }
+}
+.header-search-page {
+    // .header-search-page__title
+    &__title {
+    }
+}
+.body-size-chart {
+    // .body-size-chart__tabs
+    &__tabs {
+        overflow: hidden;
+    }
+    // .body-size-chart__navigation
+    &__navigation {
+        display: flex;
+        @include adaptiveValue("gap", 64, 24);
+        border-bottom: 5px solid $mainColor;
+    }
+    // .body-size-chart__title
+    &__title {
+        position: relative;
+        padding: 0 rem(30) rem(13);
+        font-family: $raleway;
+        font-weight: 700;
+        font-size: rem(18);
+        transition: 0.2s;
+
+        &:hover,
+        &._tab-active {
+            color: $orange;
+        }
+
+        &._tab-active::after {
+            transform: translate(-50%, 0px);
+            opacity: 1;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: rem(-5);
+            width: 100%;
+            height: rem(5);
+            background-color: $orange;
+            transform: translate(-100%, 0px);
+            opacity: 0;
+            transition: 0.5s;
+        }
+    }
+    // .body-size-chart__content
+    &__content {
+        position: relative;
+    }
+    // .body-size-chart__body
+    &__body {
+        position: relative;
+
+        &::after {
+            content: "";
+
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            width: rem(64);
+            height: 100%;
+
+            background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+
+            @media (min-width:$mobile){
+                 content: none; 
+            }
+        }
+    }
+    // .body-size-chart__table
+    &__table {
+        overflow-x: auto;
+
+        @media (min-width: $mobile) {
+            overflow: hidden;
+        }
+    }
+    // .body-size-chart__thead
+    &__thead {
+        width: 100%;
+        padding-right: rem(20);
+        border-bottom: 5px solid $gray;
+        line-height: math.div(20, 18);
+        font-size: rem(18);
+        color: $orange;
+    }
+    // .body-size-chart__row
+    &__row {
+        display: flex;
+        padding: rem(15) 0;
+        gap: rem(15);
+        width: 100%;
+
+        span {
+            padding-left: rem(10);
+            flex: 0 0 25%;
+
+            min-width: rem(150);
+        }
+
+        &:nth-child(2n + 2) {
+            background: rgba(#eceef0, 0.5);
+        }
+
+        @media (min-width: $mobile) {
+            padding: rem(24) 0;
+        }
+
+        @media (min-width: $pc) {
+            padding-left: rem(100);
+        }
+    }
+    // .body-size-chart__tbody
+    &__tbody {
+    }
+}

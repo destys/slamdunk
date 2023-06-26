@@ -1,0 +1,114 @@
+.privacy {
+    // .privacy__container
+    &__container {
+        padding-top: rem(64);
+
+        @media (min-width: $tablet) {
+            padding-top: 0;
+        }
+    }
+    // .privacy__inner
+    &__inner {
+        display: flex;
+        gap: rem(101);
+    }
+    // .privacy__content
+    &__content {
+        flex: 1 1 auto;
+        width: 100%;
+
+        .select {
+            margin-bottom: rem(64);
+
+            @media (min-width: $tablet) {
+                display: none !important;
+            }
+        }
+    }
+    // .privacy__title
+    &__title {
+        max-width: none;
+    }
+    // .privacy__text
+    &__text {
+        line-height: math.div(28, 20);
+        @include adaptiveValue("font-size", 20, 14);
+
+        div {
+            @include adaptiveValue("margin-bottom", 64, 32);
+        }
+
+        p {
+            opacity: 0.8;
+        }
+
+        h3 {
+            margin-bottom: rem(16);
+            font-family: $raleway;
+            font-weight: 700;
+            line-height: math.div(32, 24);
+            @include adaptiveValue("font-size", 24, 18);
+        }
+    }
+    // .privacy__sidebar
+    &__sidebar {
+        flex: 0 0 rem(301);
+        display: none;
+
+        @media (min-width: $tablet) {
+            display: block;
+        }
+    }
+}
+.sidebar-privacy {
+    // .sidebar-privacy__wrapper
+    &__wrapper {
+        overflow: hidden;
+    }
+    // .sidebar-privacy__list
+    &__list {
+        padding-left: rem(32);
+        border-left: 5px solid $mainColor;
+
+        li {
+            &:not(:last-child) {
+                margin-bottom: rem(30);
+            }
+
+            a {
+                font-family: $raleway;
+                font-weight: 700;
+                line-height: math.div(32, 24);
+                font-size: rem(24);
+
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: rem(-37);
+                    top: 0;
+
+                    width: rem(5);
+                    height: 230%;
+                    background-color: $orange;
+
+                    transform: translate(0px, -100%);
+                    opacity: 0;
+                    transition: transform 0.2s;
+                }
+
+                &:hover,
+                &._navigator-active {
+                    color: $orange;
+                }
+
+                &._navigator-active {
+                    &::before {
+                        transform: translate(0px, -50%);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

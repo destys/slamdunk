@@ -2,20 +2,37 @@
 // Снипет (HTML): btn
 
 .button {
-	display: inline-flex;
-	padding: rem(9) rem(13);
-	background-color: $mainColor;
-	border: 1px solid rgba(255, 255, 255, 0.2);
-	border-radius: 10px;
-	font-weight: 500;
-	font-size: rem(18);
-	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: rem(48);
+	border: 1px solid rgba(23, 23, 23, 0.3);
+	border-radius: 24px;
 
+	font-family: $raleway;
+	font-weight: 700;
+	font-size: rem(18);
+
+	transition: .2s;
+	
 	@media (any-hover: hover) {
 		&:hover {
+			background-color: $orange;
+			border-color: $orange;
+			color: #fff;
 		}
 	}
 	&._fw {
 		width: 100%;
+	}
+	&_orange {
+		color: #fff;
+		background-color: $orange;
+		border-color: $orange;
+
+		&:hover{
+			background-color: #F15700 !important;
+			border-color: #F15700 !important;
+		}
 	}
 }

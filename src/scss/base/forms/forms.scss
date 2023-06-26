@@ -4,11 +4,6 @@
 	&__row {
 	}
 	&__column {
-		display: none;
-
-		&._active {
-			display: block;
-		}
 	}
 	&__line {
 	}
@@ -31,7 +26,7 @@
 
 // <CHECK>
 // Снипет (HTML): chk
-// @import "checkbox";
+@import "checkbox";
 
 // <RADIO>
 // Снипет (HTML): opt
@@ -39,7 +34,7 @@
 
 // <SELECT>
 // Снипет (HTML): sel
-// @import "select";
+@import "select";
 
 // <RATING>
 // Снипет (HTML): rating
@@ -51,4 +46,4 @@
 
 // <RANGE>
 // Снипет (HTML):
-// @import "range";
+@import "range";

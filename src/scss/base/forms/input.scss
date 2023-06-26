@@ -9,26 +9,18 @@ textarea {
 	appearance: none;
 }
 .input {
-	margin-bottom: rem(10);
 	width: 100%;
+	height: rem(58);
 	display: block;
-	padding: rem(9) rem(11);
-	background: #ffffff;
-	border: 1px solid rgba(255, 255, 255, 0.2);
-	border-radius: 10px;
+	padding: 0px 24px;
+	border: 1px solid rgba(23, 23, 23, 0.3);
+	border-radius: 16px;
+	@include adaptiveValue("font-size", 20, 16);
 
-	font-weight: 500;
-	font-size: rem(18);
-	color: $mainColor;
-
-	&::placeholder {
-		font-weight: 500;
-		font-size: rem(18);
-		opacity: 0.5;
-	}
 	&._focus {
 	}
 	&._error {
+		border-color: red;
 	}
 }
 textarea.input {

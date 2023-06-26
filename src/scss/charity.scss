@@ -1,0 +1,188 @@
+.charity {
+    // .charity__header
+    &__header {
+        margin-bottom: rem(112);
+        padding: rem(24) rem(16) 0;
+        position: relative;
+        min-height: rem(526);
+
+        background: url("@img/charity/charity-header-img-mobile.jpg") center center no-repeat;
+        background-size: cover !important;
+
+        @media (min-width: $mobile) {
+            background-image: none !important;
+            min-height: 0;
+        }
+
+        @media (min-width: $pc) {
+            padding: rem(24) rem(35) 0;
+        }
+    }
+    // .charity__fonds
+    &__fonds {
+        @include adaptiveValue("margin-bottom", 112, 64);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 rem(16);
+        @include adaptiveValue("gap", 81, 24);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    // .charity__total
+    &__total {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include adaptiveValue("margin-bottom", 114, 64);
+
+        @include adaptiveValue("padding-top", 112, 32);
+        @include adaptiveValue("padding-bottom", 112, 32);
+        background: #eceef0;
+        border-radius: 48px;
+
+        @media (min-width: $mobile) {
+            margin-left: rem(16);
+            margin-right: rem(16);
+        }
+
+        @media (min-width: $pc) {
+            margin-left: rem(32);
+            margin-right: rem(32);
+        }
+    }
+}
+.header-charity {
+    // .header-charity_img
+    &_img {
+        display: none;
+        border-radius: 48px 48px 0px 0px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (min-width: $mobile) {
+            display: block;
+        }
+    }
+    // .header-charity__container
+    &__container {
+        @media (min-width: $mobile) {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            max-width: 80%;
+            transform: translate(-50%, -50%);
+        }
+
+        @media (min-width: em(1268)) {
+            top: 65%;
+        }
+    }
+    // .header-charity__content
+    &__content {
+        color: #fff;
+    }
+    // .header-charity__title
+    &__title {
+        max-width: rem(850);
+        @include adaptiveValue("margin-bottom", 32, 16);
+        word-break: break-word;
+
+        @media (min-width: $mobileSmall) {
+            word-break: normal;
+        }
+    }
+    // .header-charity__text
+    &__text {
+        max-width: rem(595);
+        line-height: math.div(28, 20);
+        @include adaptiveValue("font-size", 20, 14);
+    }
+}
+.fonds-charity {
+    // .fonds-charity__item
+    &__item {
+    }
+}
+.total-charity {
+    // .total-charity__title
+    &__title {
+        @include adaptiveValue("margin-bottom", 64, 16);
+        max-width: rem(900);
+        font-family: $raleway;
+        font-weight: 900;
+        line-height: math.div(82, 70);
+        @include adaptiveValue("font-size", 70, 32);
+        text-align: center;
+    }
+    // .total-charity__counter
+    &__counter {
+    }
+    // .total-charity__currency
+    &__currency {
+        margin-top: rem(32);
+        font-family: $raleway;
+        font-weight: 900;
+        line-height: math.div(33, 40);
+        letter-spacing: -0.02em;
+        @include adaptiveValue("font-size", 40, 18);
+        text-transform: uppercase;
+        color: $orange;
+    }
+}
+
+.tick {
+    font-size: 1rem;
+    white-space: nowrap;
+    font-family: arial, sans-serif;
+}
+
+.tick-flip,
+.tick-text-inline {
+    @include adaptiveValue("font-size", 160, 36);
+}
+
+.tick-flip-panel {
+    background-color: $mainColor !important;
+}
+
+.tick-flip {
+    border-radius: 12px;
+
+    @media (min-width:$tablet){
+         border-radius: 24px; 
+    }
+}
+
+.tick-flip-shadow {
+    box-shadow: none;
+}
+
+.tick-flip-panel-back:after {
+    background: none;
+}
+
+.tick-flip-panel-text-wrapper,
+.tick-flip-spacer {
+    font-family: "Oswald", sans-serif;
+    @include adaptiveValue("font-size", 160, 36);
+}
+
+.tick-flip-panel-back,
+.tick-flip-panel-front {
+    height: 48%;
+}
+
+.tick-flip-spacer {
+    display: contents;
+}

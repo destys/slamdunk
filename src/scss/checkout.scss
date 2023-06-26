@@ -1,0 +1,350 @@
+.checkout {
+    @include adaptiveValue("margin-top", 64, 32);
+    @include adaptiveValue("margin-bottom", 114, 64);
+    // .checkout__container
+    &__container {
+    }
+    // .checkout__back
+    &__back {
+        display: block;
+        margin-bottom: rem(24);
+        color: $orange;
+    }
+    // .checkout__wrapper
+    &__wrapper {
+        margin: 0 auto;
+        max-width: rem(594);
+    }
+    // .checkout__title
+    &__title {
+    }
+    // .checkout__form
+    &__form {
+    }
+}
+.form-checkout {
+    // .form-checkout__step
+    &__step {
+        margin-top: rem(64);
+        @include adaptiveValue("margin-bottom", 48, 24);
+
+        font-family: $raleway;
+        font-weight: 900;
+        line-height: math.div(50, 42);
+        @include adaptiveValue("font-size", 42, 28);
+
+        span {
+            margin-right: rem(16);
+            color: $orange;
+        }
+    }
+    // .form-checkout__block
+    &__block,
+    .delivery-address__item {
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 40, 16);
+        }
+        // .form-checkout__block_correct
+        &_correct {
+            position: relative;
+
+            .button {
+                position: absolute;
+                top: 50%;
+                right: rem(20);
+                transform: translate(0px, -50%);
+
+                border: 0;
+
+                &:hover {
+                    background-color: transparent;
+
+                    path {
+                        fill: $orange;
+                    }
+                }
+            }
+        }
+    }
+    // .form-checkout__label
+    &__label {
+        display: block;
+        margin-bottom: rem(8);
+        line-height: math.div(26, 20);
+        font-size: rem(20);
+        color: $gray;
+
+        // .form-checkout__label_radio
+        &_radio {
+            display: flex;
+            align-items: center;
+
+            font-family: $raleway;
+            font-weight: 700;
+            line-height: math.div(32, 24);
+            font-size: rem(24);
+            color: $mainColor;
+
+            cursor: pointer;
+
+            &::before {
+                content: "";
+                margin-right: rem(8);
+                display: block;
+                width: rem(20);
+                height: rem(20);
+                border: 2px solid #fff;
+                outline: 2px solid $gray;
+                border-radius: 50%;
+                background-color: transparent;
+                transition: 0.2s;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+    // .form-checkout__input
+    &__input {
+        line-height: math.div(26, 20);
+        font-size: rem(20);
+        // .form-checkout__input_radio
+        &_radio {
+            &:checked + label {
+                &::before {
+                    outline: 2px solid $orange;
+                    background-color: $orange;
+                }
+            }
+        }
+        // .form-checkout__input_coupone
+        &_coupone {
+            margin-bottom: rem(16);
+            height: rem(58);
+            border-radius: 0 0 24px 24px;
+
+            padding-left: rem(24);
+            width: 100%;
+            border: 1px solid rgba(23, 23, 23, 0.3);
+
+            &._form-focus + button {
+                background-color: $orange !important;
+                color: #fff;
+                border-color: $orange;
+            }
+
+            @media (min-width: $mobileSmall) {
+                margin-bottom: 0;
+                border-radius: 16px 0 0 16px;
+            }
+        }
+    }
+    // .form-checkout__options
+    &__options {
+    }
+    // .form-checkout__radio
+    &__radio {
+        &:not(:last-child) {
+            margin-bottom: rem(21);
+        }
+    }
+    // .form-checkout__method
+    &__method {
+        font-family: $raleway;
+        font-weight: 700;
+        line-height: math.div(32, 24);
+        @include adaptiveValue("font-size", 24, 18);
+    }
+    // .form-checkout__timing
+    &__timing {
+        display: block;
+        margin-top: rem(8);
+        line-height: math.div(26, 20);
+        @include adaptiveValue("font-size", 20, 14);
+        color: $gray;
+    }
+    // .form-checkout__coupone
+    &__coupone {
+        margin-bottom: rem(48);
+
+        div {
+            display: flex;
+            flex-direction: column;
+
+            @media (min-width: $mobileSmall) {
+                flex-direction: row;
+                justify-content: space-between;
+                border-radius: 16px;
+                height: rem(58);
+                overflow: hidden;
+            }
+        }
+
+        .form-checkout__label {
+            border-radius: 24px 24px 0 0;
+            margin-bottom: 0;
+            padding: rem(16);
+            background-color: $mainColor;
+            color: #fff;
+
+            @media (min-width: $mobileSmall) {
+                margin-bottom: rem(8);
+                padding: 0;
+                background-color: transparent;
+                color: $gray;
+            }
+        }
+
+        .form-checkout__button {
+            flex: 0 0 rem(58);
+            border-radius: 24px;
+            background-color: transparent;
+            border: 1.5px solid rgba(23, 23, 23, 0.3);
+            color: $gray;
+
+            @media (min-width: $mobileSmall) {
+                flex: 0 0 rem(148);
+                background: #b9b9b9;
+                border-radius: 0 16px 16px 0;
+                border: 0;
+                color: #fff;
+            }
+        }
+    }
+    // .form-checkout__button
+    &__button {
+        flex: 0 0 rem(148);
+        background: #b9b9b9;
+        font-weight: 700;
+        line-height: math.div(28, 18);
+        font-size: rem(18);
+        color: #fff;
+
+        transition: 0.2s;
+    }
+    // .form-checkout__list-products
+    &__list-products {
+        margin-bottom: rem(24);
+    }
+    // .form-checkout__total
+    &__total {
+        display: flex;
+        flex-direction: column;
+        gap: rem(16);
+
+        margin-bottom: rem(16);
+        padding-top: rem(16);
+        padding-bottom: rem(16);
+
+        border-top: 1px solid $gray;
+        border-bottom: 5px solid $mainColor;
+    }
+    // .form-checkout__footer
+    &__footer {
+        display: flex;
+        flex-direction: column;
+        gap: rem(32);
+
+        @media (min-width: $mobile) {
+            flex-direction: row;
+        }
+    }
+}
+.list-products-form {
+    // .list-products-form__item
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        line-height: math.div(26, 20);
+        @include adaptiveValue("font-size", 20, 14);
+
+        &:not(:last-child) {
+            margin-bottom: rem(32);
+        }
+    }
+    // .list-products-form__title
+    &__title {
+        flex: 0 0 80%;
+    }
+    // .list-products-form__link
+    &__link {
+    }
+    // .list-products-form__count
+    &__count {
+        color: $gray;
+    }
+    // .list-products-form__price
+    &__price {
+    }
+}
+.footer-form-checkout {
+    // .footer-form-checkout__privacy
+    &__privacy {
+        font-family: $raleway;
+        font-weight: 500;
+        line-height: math.div(23, 14);
+        font-size: rem(14);
+        color: $gray;
+
+        a {
+            color: $orange;
+        }
+    }
+    // .footer-form-checkout__button
+    &__button {
+        width: 100%;
+
+        @media (min-width: $mobileSmall) {
+            max-width: rem(222);
+        }
+        @media (min-width: $mobile) {
+            flex: 0 0 rem(222);
+        }
+    }
+}
+
+#change-address .select_delivery-address__select {
+    margin-bottom: rem(16);
+}
+
+.total-checkout {
+    // .total-checkout__item
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        line-height: math.div(26, 20);
+        @include adaptiveValue("font-size", 20, 14);
+
+        // .total-checkout__item_coupone
+        &_coupone {
+            span {
+                &:last-child {
+                    color: $orange;
+                }
+            }
+        }
+        // .total-checkout__item_total
+        &_total {
+            span {
+                &:first-child {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+.woocommerce-billing-fields__field-wrapper {
+    label[for="billing_country"],
+    .select_delivery-address__select,
+    label[for="billing_city"],
+    #billing_city,
+    label[for="billing_address_1"],
+    #billing_address_1,
+    label[for="billing_address_2"],
+    #billing_address_2 {
+        display: none;
+    }
+}

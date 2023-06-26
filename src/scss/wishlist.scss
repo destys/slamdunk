@@ -1,0 +1,88 @@
+.tinvwl-table-manage-list {
+    display: block;
+
+    thead {
+        display: none;
+    }
+    tbody {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(rem(300), 1fr));
+        gap: rem(40);
+    }
+
+    .wishlist_item {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        .product-remove button {
+            position: absolute;
+            top: rem(50);
+            right: rem(30);
+        }
+
+        .product-thumbnail {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: rem(24);
+            border-radius: 24px 24px 0px 0px;
+            background: rgba(0, 0, 0, 0.05);
+            width: 100% !important;
+            height: rem(229);
+
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+
+            img,
+            picture {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                margin: 0 auto;
+                position: relative;
+                z-index: -1;
+            }
+
+            @media (min-width: $mobile) {
+                height: rem(320);
+            }
+        }
+
+        .product-name {
+            display: block;
+            @include adaptiveValue("margin-bottom", 32, 24);
+            font-weight: 700;
+            line-height: math.div(32, 24);
+            @include adaptiveValue("font-size", 24, 18);
+            transition: 0.2s;
+
+            a {
+                transition: 0.2s;
+            }
+
+            a:hover {
+                color: $orange;
+            }
+        }
+
+        .product-price {
+            margin-top: auto;
+            font-weight: 700;
+            line-height: math.div(37, 32);
+            @include adaptiveValue("font-size", 32, 22);
+
+            span.woocommerce-Price-currencySymbol {
+                font-weight: 500;
+            }
+        }
+
+        .product-action {
+            display: none;
+        }
+    }
+}

@@ -8,35 +8,23 @@ import * as noUiSlider from 'nouislider';
 // import 'nouislider/dist/nouislider.css';
 
 export function rangeInit() {
-	const priceSlider = document.querySelector('#range');
-	if (priceSlider) {
-		let textFrom = priceSlider.getAttribute('data-from');
-		let textTo = priceSlider.getAttribute('data-to');
+	const priceRange = document.querySelector('[data-range]');
+	const priceSlider = document.querySelector('[data-range-item]');
+
+	if(priceRange) {
+		let itemFrom = priceRange.querySelector('[data-range-from]');
+		let itemTo = priceRange.querySelector('[data-range-to]');
+		console.log('itemFrom.value: ', Number(itemFrom.value));
+		console.log('itemTo.value: ', itemTo.value);
 		noUiSlider.create(priceSlider, {
-			start: 0, // [0,200000]
-			connect: [true, false],
+			start: [ Number(itemFrom.value), Number(itemTo.value)], // [0,200000]
+			connect: true,
+			tooltips: [true, true],
 			range: {
-				'min': [0],
-				'max': [200000]
+				'min': [Number(itemFrom.dataset.rangeFrom)],
+				'max': [Number(itemTo.dataset.rangeTo)]
 			}
 		});
-		/*
-		const priceStart = document.getElementById('price-start');
-		const priceEnd = document.getElementById('price-end');
-		priceStart.addEventListener('change', setPriceValues);
-		priceEnd.addEventListener('change', setPriceValues);
-		*/
-		function setPriceValues() {
-			let priceStartValue;
-			let priceEndValue;
-			if (priceStart.value != '') {
-				priceStartValue = priceStart.value;
-			}
-			if (priceEnd.value != '') {
-				priceEndValue = priceEnd.value;
-			}
-			priceSlider.noUiSlider.set([priceStartValue, priceEndValue]);
-		}
 	}
 }
 rangeInit();

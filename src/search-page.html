@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Поиск"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+            <div class="search-page">
+                <section class="search-page__header header-search-page">
+                    <div class="header-search-page__container">
+                        <div class="header-search-page__content">
+                            <h1 class="header-search-page__title section-title">Помощь в <span
+                                    class="header-search-page__title_underline" data-popup="#search-form">поиске</span> любых спортивных
+                                товаров<span class="title-dot">.</span></h1>
+                            <div class="header-search-page__text">У нас вы можете найти как оригинальную спортивную
+                                одежду
+                                так
+                                и заказать редкие экземпляры.</div>
+                        </div>
+                    </div>
+                    <div class="header-search-page_img">
+                        <img data-src="@img/search-page/search-page-header-img.png" alt="search-page-header-img" class="_desktop">
+                        <img data-src="@img/search-page/search-page-header-img-mobile.png" alt="search-page-header-img" class="_mobile">
+                    </div>
+                </section>
+                <div class="search-page__steps steps-search-page">
+                    <div class="steps-search-page__container">
+                        <div class="steps-search-page__list">
+                            <div class="steps-search-page__item item-steps">
+                                <div class="item-steps__step">
+                                    <span class="item-steps__step">шаг</span>
+                                    <span class="item-steps__num-step">1</span>
+                                </div>
+                                <div class="item-steps__content">
+                                    <div class="item-steps__title">Вы скидываете название товара</div>
+                                    <div class="item-steps__text">В случае, если вы считаете, что получили поддельный
+                                        товар, пожалуйста, незамедлительно свяжитесь с нами.</div>
+                                </div>
+                            </div>
+                            <div class="steps-search-page__item item-steps">
+                                <div class="item-steps__step">
+                                    <span class="item-steps__step">шаг</span>
+                                    <span class="item-steps__num-step">2</span>
+                                </div>
+                                <div class="item-steps__content">
+                                    <div class="item-steps__title">Мы ищем по всему миру</div>
+                                    <div class="item-steps__text">В случае, если вы считаете, что получили поддельный
+                                        товар, пожалуйста, незамедлительно свяжитесь с нами.</div>
+                                </div>
+                            </div>
+                            <div class="steps-search-page__item item-steps">
+                                <div class="item-steps__step">
+                                    <span class="item-steps__step">шаг</span>
+                                    <span class="item-steps__num-step">3</span>
+                                </div>
+                                <div class="item-steps__content">
+                                    <div class="item-steps__title">Находим и делаем предложение</div>
+                                    <div class="item-steps__text">В случае, если вы считаете, что получили поддельный
+                                        товар, пожалуйста, незамедлительно свяжитесь с нами.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="search-page__block block-search-page">
+                    <div class="block-search-page__img">
+                        <img data-src="@img/search-page/pngwing.png" alt="pngwing">
+                    </div>
+                    <form action="#" class="block-search-page__form form-search-page">
+                        <h2 class="form-search-page__title">Что нам найти для вас<span class="roboto">?</span><span class="title-dot">.</span></h2>
+                        <div class="form-search-page__text">Мы используем онлайн-эквайринг одного из крупнейших банков
+                            России, не храним и не получаем данные вашей банковской карты.</div>
+                        <label for="search-page-photo" class="form-search-page__label">
+                            <div class="form-search-page__label_img">
+                                <img data-src="@img/search-page/form-rectangle.png" alt="form-rectangle">
+                            </div>
+                            <div class="form-search-page__img-text">
+                                <img src="@img/search-page/search-photo-icon.png" alt="search-photo-icon">
+                            </div>
+                        </label>
+                        <input autocomplete="off" type="file" name="search-page-photo" id="search-page-photo"
+                            data-error="Ошибка" placeholder="" class="form-search-page__file">
+                        <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                            placeholder="Я знаю название товара, который мне нужен"
+                            class="form-search-page__input input">
+                        <input autocomplete="off" type="email" name="form[]" data-error="Ошибка" placeholder="Е-mail"
+                            class="form-search-page__input input">
+                        <button type="submit" class="form-search-page__button button">Найти товар</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

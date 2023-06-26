@@ -5,22 +5,29 @@
 
 // Подключение шрифтов ===========================================================================================================================================================================================================================================================================
 //&display=swap - добавить при подключении через плагин
-@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Raleway:500,700,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Jost:regular,500&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Oswald:500);
 
 // Подключить если есть локальные файлы шрифтов
-@import "fonts/fonts";
+//@import "fonts/fonts";
 
 // Подключение иконочных шрифтов ==============================================================================================================================================================================================================================================================================
 // Подключить если есть файл иконочного шрифта
 //@import "fonts/icons";
 
 // Шрифт по умолчанию ==============================================================================================================================================================================================================================================================================
-$fontFamily: "Montserrat";
+$fontFamily: "Jost", sans-serif;
+$raleway: "Raleway", sans-serif;
+$roboto: "Roboto", sans-serif;
 $fontSize: rem(16); // где 14(px) - размер шрифта по умолчанию из макета
 
 // Основные цвета
-$mainColor: #373737; // Цвет шрифта по умолчанию
-$grey: #707070;
+$mainColor: #171717; // Цвет шрифта по умолчанию
+$orange: #ff6a00;
+$red: #e41d1b;
+$gray: #909090;
 
 // НАСТРОЙКИ ===============================================================================================================================================================================================================================================================================================
 // Минимальная ширина страницы
@@ -28,10 +35,10 @@ $minWidth: 320;
 // Ширина полотна (макета)
 $maxWidth: 1920;
 // Ширина ограничивающего контейнера (0 = нет ограничения)
-$maxWidthContainer: 1350;
+$maxWidthContainer: 1584;
 // Общий отступ у контейнера
 // (30 = по 15px слева и справа, 0 = нет отступа)
-$containerPadding: 30;
+$containerPadding: 32;
 
 // Ширина срабатывания первого брейкпоинта
 $containerWidth: $maxWidthContainer + $containerPadding;
@@ -51,9 +58,8 @@ $responsiveType: 1;
 @import "base/null";
 
 body {
-	background-color: #f3f3f3;
-	line-height: 1.2;
-	
+	margin-top: rem(80);
+	background-color: #fff;
 	// Скролл заблокирован
 	.lock & {
 		overflow: hidden;
@@ -97,6 +103,10 @@ body {
 		@if ($containerPadding>0) {
 			padding: 0 rem(math.div($containerPadding, 2));
 		}
+
+		@media (min-width: em(1921)) {
+			max-width: 85%;
+		}
 	}
 } @else {
 	// По брейк-поинтам
@@ -134,8 +144,33 @@ body {
 
 // Подключение стилей отдельных блоков
 @import "header";
+@import "search";
+@import "brands";
+@import "crumbs";
+@import "product";
 @import "footer";
+@import "mobile-menu";
+@import "wishlist";
 
 // Подключение стилей отдельных страниц
 @import "home";
-@import "tariffs";
+@import "catalog";
+@import "product-card";
+@import "blog";
+@import "post";
+@import "support";
+@import "privacy-policy";
+@import "search-page";
+@import "contacts";
+@import "payment-methods";
+@import "payment-methods";
+@import "size-chart";
+@import "usercab";
+@import "sitemap";
+@import "about";
+@import "charity";
+@import "checkout";
+@import "cart";
+@import "login";
+@import "order-received";
+@import "404";

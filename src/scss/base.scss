@@ -3,7 +3,7 @@
 @import "base/forms/forms";
 
 // Стили попапов
-// @import "base/popup";
+@import "base/popup";
 
 // Стили спойлеров
 // @import "base/spollers";
@@ -17,11 +17,17 @@
 // Стили блока "показать еще"
 @import "base/showmore";
 
+// Сетка Cubeportfolio
+@import "base/cubeportfolio";
+
+// Flipdown
+@import "base/flipdown";
+
 // Стили для полноэкранного блока
 // @import "base/fullscreen";
 
 // Стили для липкого блока
-// @import "base/sticky";
+@import "base/sticky";
 
 // Стили для отзывчивых картинок (IBG)
 // Сниппет (HTML): ibg (div c картинкой и классами)
@@ -124,4 +130,8 @@
 	&::-webkit-scrollbar {
 		display: none;
 	}
+}
+
+*:focus-visible {
+	outline: none;
 }

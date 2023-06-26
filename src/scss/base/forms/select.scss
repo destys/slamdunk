@@ -2,6 +2,250 @@
 // Снипет (HTML): sel
 .select {
 	position: relative;
+
+	&_sort-catalog__select {
+		display: flex;
+		align-items: center;
+
+		width: 100%;
+
+		&._select-open .select__title {
+			border-radius: 16px 16px 0 0 !important;
+
+			@media (min-width:$mobile){
+				 border-radius: 0 16px 0 0 !important; 
+			}
+		}
+
+		@media (min-width: $mobileSmall) {
+			flex: 0 0 rem(328);
+		}
+
+		.select__body {
+			width: 100%;
+		}
+
+		.select__title {
+			border: 0;
+			font-weight: 700;
+			font-size: rem(20);
+
+			height: rem(58);
+
+			border: 1.5px solid $mainColor;
+			border-radius: 16px;
+
+			transition: .2s;
+
+			@media (min-width: $mobile) {
+				width: 100%;
+				border-radius: 0 16px 16px 0;
+				border: 1px solid rgba(23, 23, 23, 0.3);
+				font-weight: 400;
+			}
+		}
+
+		.select__options {
+			top: rem(56);
+			border: 1.5px solid $mainColor;
+			border-top: 0 !important;
+			border-radius: 0 0 16px 16px;
+			overflow: hidden;
+
+			@media (min-width: $mobile) {
+				border: 1px solid rgba(23, 23, 23, 0.3);
+			}
+		}
+
+		.select__option {
+			font-size: rem(20);
+			background-color: transparent;
+		}
+
+		.select__content {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			&::after {
+				content: "";
+				display: block;
+				width: rem(16);
+				height: rem(16);
+				background: url("@img/icons/arr-down.svg") 0 0 no-repeat;
+			}
+		}
+
+		.select__value::after {
+			content: none;
+		}
+	}
+
+	&_top-card__select {
+		margin-bottom: rem(16);
+		flex: 1 1 auto;
+
+		&._select-open .select__title {
+			border-bottom: 0;
+			border-radius: 0 16px 0 0;
+		}
+
+		.select {
+			&__title {
+				height: rem(58);
+				border-radius: 0 16px 16px 0;
+				font-size: rem(20);
+
+				._select-open & {
+				}
+			}
+			&__options {
+				top: rem(58);
+				padding-right: rem(19);
+				border-radius: 0 0 16px 16px;
+			}
+
+			&__option {
+				&:hover {
+					color: $orange;
+					background-color: transparent;
+				}
+
+				&._first-option {
+					color: $gray;
+					background-color: rgba($gray, 0.1);
+					line-height: math.div(20, 14);
+					font-size: rem(14);
+					pointer-events: none;
+				}
+			}
+
+			&__content {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+
+				&::after {
+					content: "";
+					display: block;
+					width: rem(16);
+					height: rem(16);
+					background: url("@img/icons/arr-down.svg") 0 0 no-repeat;
+				}
+			}
+
+			&__row {
+				display: flex;
+				justify-content: space-between;
+				width: rem(180);
+				line-height: math.div(26, 14);
+				&:not(:last-child) {
+					margin-bottom: rem(8);
+				}
+			}
+
+			&__text {
+				text-align: right;
+			}
+		}
+	}
+
+	&_delivery-address__select {
+		font-size: rem(20);
+		line-height: math.div(26, 20);
+		.select {
+			&__title {
+				height: rem(58);
+				border: 1px solid rgba(23, 23, 23, 0.3);
+				border-radius: 16px;
+			}
+
+			&__options {
+				padding-bottom: rem(12);
+				top: rem(58);
+				border: 1px solid rgba(23, 23, 23, 0.3);
+				border-top: 0;
+				border-radius: 0 0 16px 16px;
+			}
+
+			&__option {
+				height: rem(38);
+			}
+
+			&__value {
+				padding-right: 0;
+			}
+
+			&__content {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+
+				&::after {
+					content: "";
+					display: block;
+					width: rem(16);
+					height: rem(16);
+					background: url("@img/icons/arr-down.svg") 0 0 no-repeat;
+				}
+			}
+		}
+
+		&._select-open {
+			.select__title {
+				border-radius: 16px 16px 0 0;
+				border-bottom: 0;
+			}
+		}
+	}
+
+	&_blog__select {
+		@include adaptiveValue("margin-top", 48, 24);
+
+		@media (min-width: em(1280)) {
+			display: none;
+		}
+
+		.select {
+			&__body {
+				height: rem(58);
+			}
+
+			&__title {
+				border: 1.5px solid #171717;
+				border-radius: 16px;
+
+				font-weight: 700;
+				font-size: rem(20);
+			}
+
+			&__value {
+				height: rem(58);
+
+				&::after {
+					content: "";
+					display: block;
+					align-self: center;
+					flex: 0 0 rem(16);
+					height: rem(16);
+					background: url("@img/icons/arr-down.svg") 0 0 no-repeat;
+				}
+			}
+
+			&__options {
+				top: rem(48);
+				border: 1.5px solid #171717;
+				border-top: 0;
+				border-radius: 0 0 16px 16px;
+			}
+
+			&__option {
+				padding: rem(15);
+				font-size: rem(20);
+			}
+		}
+	}
+
 	// .select__body
 	&__body {
 		position: relative;

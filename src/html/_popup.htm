@@ -1,11 +1,1610 @@
-<!-- 
-<div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-			</div>
-		</div>
-	</div>
-</div>
- -->
+ <div id="search-form" aria-hidden="true" class="popup">
+ 	<div class="popup__wrapper">
+ 		<div class="popup__content search-form">
+ 			<div class="search-form__header">
+ 				<div class="search-form__title section-title _mb0">Что ищем?</div>
+ 				<button data-close type="button" class="popup__close search-form__close">
+ 					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 						<path
+ 							d="M24 0C10.8 0 0 10.8 0 24C0 37.2 10.8 48 24 48C37.2 48 48 37.2 48 24C48 10.8 37.2 0 24 0ZM24 43.2C13.44 43.2 4.8 34.56 4.8 24C4.8 13.44 13.44 4.8 24 4.8C34.56 4.8 43.2 13.44 43.2 24C43.2 34.56 34.56 43.2 24 43.2Z"
+ 							fill="#171717" />
+ 						<path
+ 							d="M32.64 12L24 20.64L15.36 12L12 15.36L20.64 24L12 32.64L15.36 36L24 27.36L32.64 36L36 32.64L27.36 24L36 15.36L32.64 12Z"
+ 							fill="#171717" />
+ 					</svg>
+ 				</button>
+ 			</div>
+ 			<div class="popup__text search-form__content">
+ 				<form action="#" class="search-form__form form-search-form">
+ 					<label for="search-photo" class="form-search-form__label">
+ 						<img data-src="@img/search-photo-placeholder.jpg" alt="search-photo-placeholder">
+ 					</label>
+ 					<input autocomplete="off" type="file" name="search-photo" id="search-photo" data-error="Ошибка"
+ 						placeholder="" class="form-search-form__file">
+ 					<input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+ 						placeholder="Я знаю название товара" class="form-search-form__input input">
+ 					<input autocomplete="off" type="email" name="form[]" data-error="Ошибка" placeholder="Е-mail"
+ 						class="form-search-form__input input">
+ 					<button type="submit" class="form-search-form__button button">Сохранить</button>
+ 				</form>
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>
+ <div id="table-sizes" aria-hidden="true" class="popup">
+ 	<div class="popup__wrapper">
+ 		<div class="popup__content table-sizes">
+ 			<div data-tabs data-tabs-animate="500" class="table-sizes__tabs">
+ 				<div class="table-sizes__header">
+ 					<nav data-tabs-titles class="table-sizes__navigation">
+ 						<button type="button" class="table-sizes__title _tab-active">Мужчинам</button>
+ 						<button type="button" class="table-sizes__title">Женщинам</button>
+ 						<button type="button" class="table-sizes__title">детям</button>
+ 					</nav>
+ 					<button data-close type="button" class="popup__close table-sizes__close">
+ 						<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 							<path
+ 								d="M24 0C10.8 0 0 10.8 0 24C0 37.2 10.8 48 24 48C37.2 48 48 37.2 48 24C48 10.8 37.2 0 24 0ZM24 43.2C13.44 43.2 4.8 34.56 4.8 24C4.8 13.44 13.44 4.8 24 4.8C34.56 4.8 43.2 13.44 43.2 24C43.2 34.56 34.56 43.2 24 43.2Z"
+ 								fill="#171717" />
+ 							<path
+ 								d="M32.64 12L24 20.64L15.36 12L12 15.36L20.64 24L12 32.64L15.36 36L24 27.36L32.64 36L36 32.64L27.36 24L36 15.36L32.64 12Z"
+ 								fill="#171717" />
+ 						</svg>
+ 					</button>
+ 				</div>
+ 				<div data-tabs-body class="table-sizes__content">
+ 					<div class="table-sizes__body body-table-sizes">
+ 						<div data-tabs data-tabs-animate="500" class="body-table-sizes__tabs">
+ 							<nav data-tabs-titles class="body-table-sizes__navigation">
+ 								<button type="button" class="body-table-sizes__title _tab-active">Обувь</button>
+ 								<button type="button" class="body-table-sizes__title">Топ</button>
+ 								<button type="button" class="body-table-sizes__title">Штаны</button>
+ 							</nav>
+ 							<div data-tabs-body class="body-table-sizes__content">
+ 								<div class="body-table-sizes__body">
+ 									<div class="body-table-sizes__table">
+ 										<div class="body-table-sizes__thead">
+ 											<div class="body-table-sizes__row">
+ 												<span>Длиная стопы (см)</span>
+ 												<span>Размер UE</span>
+ 												<span>Размер GB</span>
+ 												<span>Размер US</span>
+ 											</div>
+ 										</div>
+ 										<div class="body-table-sizes__tbody">
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 										</div>
+ 									</div>
+ 								</div>
+ 								<div class="body-table-sizes__body">
+ 									<div class="body-table-sizes__table">
+ 										<div class="body-table-sizes__thead">
+ 											<div class="body-table-sizes__row">
+ 												<span>Длиная стопы (см)</span>
+ 												<span>Размер UE</span>
+ 												<span>Размер GB</span>
+ 												<span>Размер US</span>
+ 											</div>
+ 										</div>
+ 										<div class="body-table-sizes__tbody">
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 										</div>
+ 									</div>
+ 								</div>
+ 								<div class="body-table-sizes__body">
+ 									<div class="body-table-sizes__table">
+ 										<div class="body-table-sizes__thead">
+ 											<div class="body-table-sizes__row">
+ 												<span>Длиная стопы (см)</span>
+ 												<span>Размер UE</span>
+ 												<span>Размер GB</span>
+ 												<span>Размер US</span>
+ 											</div>
+ 										</div>
+ 										<div class="body-table-sizes__tbody">
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 										</div>
+ 									</div>
+ 								</div>
+ 							</div>
+ 						</div>
+ 					</div>
+ 					<div class="table-sizes__body">
+ 						<div data-tabs data-tabs-animate="500" class="body-table-sizes__tabs">
+ 							<nav data-tabs-titles class="body-table-sizes__navigation">
+ 								<button type="button" class="body-table-sizes__title _tab-active">Обувь</button>
+ 								<button type="button" class="body-table-sizes__title">Топ</button>
+ 								<button type="button" class="body-table-sizes__title">Штаны</button>
+ 							</nav>
+ 							<div data-tabs-body class="body-table-sizes__content">
+ 								<div class="body-table-sizes__body">
+ 									<div class="body-table-sizes__table">
+ 										<div class="body-table-sizes__thead">
+ 											<div class="body-table-sizes__row">
+ 												<span>Длиная стопы (см)</span>
+ 												<span>Размер UE</span>
+ 												<span>Размер GB</span>
+ 												<span>Размер US</span>
+ 											</div>
+ 										</div>
+ 										<div class="body-table-sizes__tbody">
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 										</div>
+ 									</div>
+ 								</div>
+ 								<div class="body-table-sizes__body">
+ 									<div class="body-table-sizes__table">
+ 										<div class="body-table-sizes__thead">
+ 											<div class="body-table-sizes__row">
+ 												<span>Длиная стопы (см)</span>
+ 												<span>Размер UE</span>
+ 												<span>Размер GB</span>
+ 												<span>Размер US</span>
+ 											</div>
+ 										</div>
+ 										<div class="body-table-sizes__tbody">
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 										</div>
+ 									</div>
+ 								</div>
+ 								<div class="body-table-sizes__body">
+ 									<div class="body-table-sizes__table">
+ 										<div class="body-table-sizes__thead">
+ 											<div class="body-table-sizes__row">
+ 												<span>Длиная стопы (см)</span>
+ 												<span>Размер UE</span>
+ 												<span>Размер GB</span>
+ 												<span>Размер US</span>
+ 											</div>
+ 										</div>
+ 										<div class="body-table-sizes__tbody">
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 										</div>
+ 									</div>
+ 								</div>
+ 							</div>
+ 						</div>
+ 					</div>
+ 					<div class="table-sizes__body">
+ 						<div data-tabs data-tabs-animate="500" class="body-table-sizes__tabs">
+ 							<nav data-tabs-titles class="body-table-sizes__navigation">
+ 								<button type="button" class="body-table-sizes__title _tab-active">Обувь</button>
+ 								<button type="button" class="body-table-sizes__title">Топ</button>
+ 								<button type="button" class="body-table-sizes__title">Штаны</button>
+ 							</nav>
+ 							<div data-tabs-body class="body-table-sizes__content">
+ 								<div class="body-table-sizes__body">
+ 									<div class="body-table-sizes__table">
+ 										<div class="body-table-sizes__thead">
+ 											<div class="body-table-sizes__row">
+ 												<span>Длиная стопы (см)</span>
+ 												<span>Размер UE</span>
+ 												<span>Размер GB</span>
+ 												<span>Размер US</span>
+ 											</div>
+ 										</div>
+ 										<div class="body-table-sizes__tbody">
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 										</div>
+ 									</div>
+ 								</div>
+ 								<div class="body-table-sizes__body">
+ 									<div class="body-table-sizes__table">
+ 										<div class="body-table-sizes__thead">
+ 											<div class="body-table-sizes__row">
+ 												<span>Длиная стопы (см)</span>
+ 												<span>Размер UE</span>
+ 												<span>Размер GB</span>
+ 												<span>Размер US</span>
+ 											</div>
+ 										</div>
+ 										<div class="body-table-sizes__tbody">
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 										</div>
+ 									</div>
+ 								</div>
+ 								<div class="body-table-sizes__body">
+ 									<div class="body-table-sizes__table">
+ 										<div class="body-table-sizes__thead">
+ 											<div class="body-table-sizes__row">
+ 												<span>Длиная стопы (см)</span>
+ 												<span>Размер UE</span>
+ 												<span>Размер GB</span>
+ 												<span>Размер US</span>
+ 											</div>
+ 										</div>
+ 										<div class="body-table-sizes__tbody">
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 											<div class="body-table-sizes__row">
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 												<span>23,7</span>
+ 											</div>
+ 										</div>
+ 									</div>
+ 								</div>
+ 							</div>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>
+ <div id="search-size" aria-hidden="true" class="popup">
+ 	<div class="popup__wrapper">
+ 		<div class="popup__content search-size">
+ 			<div class="search-size__header">
+ 				<div class="search-size__title">Не нашли размер?</div>
+ 				<button data-close type="button" class="popup__close search-size__close">
+ 					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 						<path
+ 							d="M24 0C10.8 0 0 10.8 0 24C0 37.2 10.8 48 24 48C37.2 48 48 37.2 48 24C48 10.8 37.2 0 24 0ZM24 43.2C13.44 43.2 4.8 34.56 4.8 24C4.8 13.44 13.44 4.8 24 4.8C34.56 4.8 43.2 13.44 43.2 24C43.2 34.56 34.56 43.2 24 43.2Z"
+ 							fill="#171717" />
+ 						<path
+ 							d="M32.64 12L24 20.64L15.36 12L12 15.36L20.64 24L12 32.64L15.36 36L24 27.36L32.64 36L36 32.64L27.36 24L36 15.36L32.64 12Z"
+ 							fill="#171717" />
+ 					</svg>
+ 				</button>
+ 			</div>
+ 			<form action="" class="search-size__form form-search-size">
+ 				<label for="search-size-size" class="form-search-size__label">Какой размер нужен?</label>
+ 				<input autocomplete="off" type="text" name="search-size-size" data-error="Ошибка"
+ 					placeholder="48, например" class="form-search-size__input input">
+ 				<label for="search-size-email" class="form-search-size__label">Введите e-mail</label>
+ 				<input autocomplete="off" type="email" name="search-size-email" data-error="Ошибка"
+ 					placeholder="name@gmail.com, например" class="form-search-size__input input">
+ 				<button type="submit" class="form-search-size__button button button_orange">Отправить</button>
+ 			</form>
+ 		</div>
+ 	</div>
+ </div>
+ <div id="custom-price" aria-hidden="true" class="popup">
+ 	<div class="popup__wrapper">
+ 		<div class="popup__content custom-price">
+ 			<div class="custom-price__header">
+ 				<div class="custom-price__title">Предложить цену</div>
+ 				<button data-close type="button" class="popup__close custom-price__close">
+ 					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 						<path
+ 							d="M24 0C10.8 0 0 10.8 0 24C0 37.2 10.8 48 24 48C37.2 48 48 37.2 48 24C48 10.8 37.2 0 24 0ZM24 43.2C13.44 43.2 4.8 34.56 4.8 24C4.8 13.44 13.44 4.8 24 4.8C34.56 4.8 43.2 13.44 43.2 24C43.2 34.56 34.56 43.2 24 43.2Z"
+ 							fill="#171717" />
+ 						<path
+ 							d="M32.64 12L24 20.64L15.36 12L12 15.36L20.64 24L12 32.64L15.36 36L24 27.36L32.64 36L36 32.64L27.36 24L36 15.36L32.64 12Z"
+ 							fill="#171717" />
+ 					</svg>
+ 				</button>
+ 			</div>
+ 			<div class="custom-price__text">
+ 				Можем произвести дополнительный поиск вещи с незначительными недостатками (отсутствие
+ 				коробки/потертость/неполный комплект/другие мелочи)
+ 			</div>
+ 			<form action="" class="custom-price__form form-custom-price">
+ 				<label for="custom-price-link" class="form-custom-price__label">Ссылка на товар </label>
+ 				<input autocomplete="off" type="text" name="custom-price-link" data-error="Ошибка"
+ 					placeholder="http://" class="form-custom-price__input input">
+ 				<label for="custom-price-your" class="form-custom-price__label">Какую цену предлагаете?</label>
+ 				<input autocomplete="off" type="text" name="custom-price-your" data-error="Ошибка"
+ 					placeholder="Ну без особой наглости :)" class="form-custom-price__input input">
+ 				<label for="custom-price-email" class="form-custom-price__label">Ваш e-mail</label>
+ 				<input autocomplete="off" type="email" name="custom-price-email" data-error="Ошибка"
+ 					placeholder="name@gmail.com, например" class="form-custom-price__input input">
+ 				<button type="submit" class="form-custom-price__button button button_orange">Отправить</button>
+ 			</form>
+ 		</div>
+ 	</div>
+ </div>
+ <div id="change-name" aria-hidden="true" class="popup">
+ 	<div class="popup__wrapper">
+ 		<div class="popup__content change-field">
+ 			<div class="change-field__header">
+ 				<div class="change-field__title">Изменить имя</div>
+ 				<button data-close type="button" class="popup__close change-field__close">
+ 					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 						<path
+ 							d="M24 0C10.8 0 0 10.8 0 24C0 37.2 10.8 48 24 48C37.2 48 48 37.2 48 24C48 10.8 37.2 0 24 0ZM24 43.2C13.44 43.2 4.8 34.56 4.8 24C4.8 13.44 13.44 4.8 24 4.8C34.56 4.8 43.2 13.44 43.2 24C43.2 34.56 34.56 43.2 24 43.2Z"
+ 							fill="#171717" />
+ 						<path
+ 							d="M32.64 12L24 20.64L15.36 12L12 15.36L20.64 24L12 32.64L15.36 36L24 27.36L32.64 36L36 32.64L27.36 24L36 15.36L32.64 12Z"
+ 							fill="#171717" />
+ 					</svg>
+ 				</button>
+ 			</div>
+ 			<form action="#" class="change-field__form change-name-form" data-dev>
+ 				<label for="" class="change-field__label">Введите имя и фамилию</label>
+ 				<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Иван Иванов"
+ 					class="change-field__input input">
+ 				<button type="submit" class="change-field__button button button_orange">Сохранить</button>
+ 			</form>
+ 		</div>
+ 	</div>
+ </div>
+ <div id="change-email" aria-hidden="true" class="popup">
+ 	<div class="popup__wrapper">
+ 		<div class="popup__content change-field">
+ 			<div class="change-field__header">
+ 				<div class="change-field__title">Изменить e-mail</div>
+ 				<button data-close type="button" class="popup__close change-field__close">
+ 					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 						<path
+ 							d="M24 0C10.8 0 0 10.8 0 24C0 37.2 10.8 48 24 48C37.2 48 48 37.2 48 24C48 10.8 37.2 0 24 0ZM24 43.2C13.44 43.2 4.8 34.56 4.8 24C4.8 13.44 13.44 4.8 24 4.8C34.56 4.8 43.2 13.44 43.2 24C43.2 34.56 34.56 43.2 24 43.2Z"
+ 							fill="#171717" />
+ 						<path
+ 							d="M32.64 12L24 20.64L15.36 12L12 15.36L20.64 24L12 32.64L15.36 36L24 27.36L32.64 36L36 32.64L27.36 24L36 15.36L32.64 12Z"
+ 							fill="#171717" />
+ 					</svg>
+ 				</button>
+ 			</div>
+ 			<form action="#" class="change-field__form change-name-form" data-dev>
+ 				<label for="" class="change-field__label">Введите e-mail</label>
+ 				<input autocomplete="off" type="email" name="form[]" data-error="Ошибка"
+ 					placeholder="name@gmail.com, например" class="change-field__input input">
+ 				<div class="change-field__text">Все подписки на рассылки будут сохранены при изменении e-mail</div>
+ 				<button type="submit" class="change-field__button button button_orange">Сохранить</button>
+ 			</form>
+ 		</div>
+ 	</div>
+ </div>
+ <div id="change-phone" aria-hidden="true" class="popup">
+ 	<div class="popup__wrapper">
+ 		<div class="popup__content change-field">
+ 			<div class="change-field__header">
+ 				<div class="change-field__title">Изменить телефон</div>
+ 				<button data-close type="button" class="popup__close change-field__close">
+ 					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 						<path
+ 							d="M24 0C10.8 0 0 10.8 0 24C0 37.2 10.8 48 24 48C37.2 48 48 37.2 48 24C48 10.8 37.2 0 24 0ZM24 43.2C13.44 43.2 4.8 34.56 4.8 24C4.8 13.44 13.44 4.8 24 4.8C34.56 4.8 43.2 13.44 43.2 24C43.2 34.56 34.56 43.2 24 43.2Z"
+ 							fill="#171717" />
+ 						<path
+ 							d="M32.64 12L24 20.64L15.36 12L12 15.36L20.64 24L12 32.64L15.36 36L24 27.36L32.64 36L36 32.64L27.36 24L36 15.36L32.64 12Z"
+ 							fill="#171717" />
+ 					</svg>
+ 				</button>
+ 			</div>
+ 			<form action="#" class="change-field__form change-name-form" data-dev>
+ 				<label for="" class="change-field__label">Введите телефон</label>
+ 				<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="+7 (999) 999-99-99"
+ 					class="change-field__input input">
+ 				<button type="submit" class="change-field__button button button_orange">Сохранить</button>
+ 			</form>
+ 		</div>
+ 	</div>
+ </div>
+ <div id="change-date" aria-hidden="true" class="popup">
+ 	<div class="popup__wrapper">
+ 		<div class="popup__content change-field">
+ 			<div class="change-field__header">
+ 				<div class="change-field__title">Изменить дату рождения</div>
+ 				<button data-close type="button" class="popup__close change-field__close">
+ 					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 						<path
+ 							d="M24 0C10.8 0 0 10.8 0 24C0 37.2 10.8 48 24 48C37.2 48 48 37.2 48 24C48 10.8 37.2 0 24 0ZM24 43.2C13.44 43.2 4.8 34.56 4.8 24C4.8 13.44 13.44 4.8 24 4.8C34.56 4.8 43.2 13.44 43.2 24C43.2 34.56 34.56 43.2 24 43.2Z"
+ 							fill="#171717" />
+ 						<path
+ 							d="M32.64 12L24 20.64L15.36 12L12 15.36L20.64 24L12 32.64L15.36 36L24 27.36L32.64 36L36 32.64L27.36 24L36 15.36L32.64 12Z"
+ 							fill="#171717" />
+ 					</svg>
+ 				</button>
+ 			</div>
+ 			<form action="#" class="change-field__form change-name-form" data-dev>
+ 				<label for="" class="change-field__label">Введите дату рождения</label>
+ 				<input autocomplete="off" type="date" name="form[]" data-error="Ошибка" placeholder="ДД.ММ.ГГГГ"
+ 					class="change-field__input input">
+ 				<button type="submit" class="change-field__button button button_orange">Сохранить</button>
+ 			</form>
+ 		</div>
+ 	</div>
+ </div>
+ <div id="change-password" aria-hidden="true" class="popup">
+ 	<div class="popup__wrapper">
+ 		<div class="popup__content change-field">
+ 			<div class="change-field__header">
+ 				<div class="change-field__title">Изменить пароль</div>
+ 				<button data-close type="button" class="popup__close change-field__close">
+ 					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 						<path
+ 							d="M24 0C10.8 0 0 10.8 0 24C0 37.2 10.8 48 24 48C37.2 48 48 37.2 48 24C48 10.8 37.2 0 24 0ZM24 43.2C13.44 43.2 4.8 34.56 4.8 24C4.8 13.44 13.44 4.8 24 4.8C34.56 4.8 43.2 13.44 43.2 24C43.2 34.56 34.56 43.2 24 43.2Z"
+ 							fill="#171717" />
+ 						<path
+ 							d="M32.64 12L24 20.64L15.36 12L12 15.36L20.64 24L12 32.64L15.36 36L24 27.36L32.64 36L36 32.64L27.36 24L36 15.36L32.64 12Z"
+ 							fill="#171717" />
+ 					</svg>
+ 				</button>
+ 			</div>
+ 			<form action="#" class="change-field__form change-name-form" data-dev>
+ 				<label for="" class="change-field__label">Новый пароль</label>
+ 				<input autocomplete="off" type="password" name="form[]" data-error="Ошибка"
+ 					placeholder="Рекомендуем не меньше 6 символов" class="change-field__input input">
+ 				<input autocomplete="off" type="password" name="form[]" data-error="Ошибка" placeholder=""
+ 					class="change-field__input input">
+ 				<button type="submit" class="change-field__button button button_orange">Сохранить</button>
+ 			</form>
+ 		</div>
+ 	</div>
+ </div>
+ <div id="change-address" aria-hidden="true" class="popup">
+ 	<div class="popup__wrapper">
+ 		<div class="popup__content change-field">
+ 			<div class="change-field__header">
+ 				<div class="change-field__title">Изменить адрес</div>
+ 				<button data-close type="button" class="popup__close change-field__close">
+ 					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 						<path
+ 							d="M24 0C10.8 0 0 10.8 0 24C0 37.2 10.8 48 24 48C37.2 48 48 37.2 48 24C48 10.8 37.2 0 24 0ZM24 43.2C13.44 43.2 4.8 34.56 4.8 24C4.8 13.44 13.44 4.8 24 4.8C34.56 4.8 43.2 13.44 43.2 24C43.2 34.56 34.56 43.2 24 43.2Z"
+ 							fill="#171717" />
+ 						<path
+ 							d="M32.64 12L24 20.64L15.36 12L12 15.36L20.64 24L12 32.64L15.36 36L24 27.36L32.64 36L36 32.64L27.36 24L36 15.36L32.64 12Z"
+ 							fill="#171717" />
+ 					</svg>
+ 				</button>
+ 			</div>
+ 			<form action="#" class="change-field__form change-name-form" data-dev>
+ 				<label for="" class="change-field__label">Страна</label>
+ 				<select name="change_country" class="delivery-address__select">
+ 					<option value="AZ">Азербайджан</option>
+ 					<option value="AM">Армения</option>
+ 					<option value="BY">Беларусь</option>
+ 					<option value="KZ">Казахстан</option>
+ 					<option value="PL">Польша</option>
+ 					<option value="RU" selected="selected">Россия</option>
+ 					<option value="UZ">Узбекистан</option>
+ 					<option value="UA">Украина</option>
+ 					<option value="EE">Эстония</option>
+ 				</select>
+ 				<label for="" class="change-field__label">Город</label>
+ 				<input autocomplete="off" type="text" name="change_city" data-required data-error="Заполните Город"
+ 					placeholder="Барнаул" class="change-field__input input">
+ 				<label for="" class="change-field__label">Улица</label>
+ 				<input autocomplete="off" type="text" name="change_street" data-required data-error="Заполните улицу"
+ 					placeholder="Весенняя" class="change-field__input input">
+ 				<label for="" class="change-field__label">Дом</label>
+ 				<input autocomplete="off" type="text" name="change_building" data-required data-error="Заполните дом"
+ 					placeholder="57" class="change-field__input input">
+ 				<button type="submit" class="change-field__button button button_orange">Сохранить</button>
+ 			</form>
+ 		</div>
+ 	</div>
+ </div>
+ <div id="login" aria-hidden="true" class="popup">
+ 	<div class="popup__wrapper">
+ 		<div class="popup__content login">
+ 			<button data-close type="button" class="popup__close login__close">
+ 				<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 					<path
+ 						d="M24 0C10.8 0 0 10.8 0 24C0 37.2 10.8 48 24 48C37.2 48 48 37.2 48 24C48 10.8 37.2 0 24 0ZM24 43.2C13.44 43.2 4.8 34.56 4.8 24C4.8 13.44 13.44 4.8 24 4.8C34.56 4.8 43.2 13.44 43.2 24C43.2 34.56 34.56 43.2 24 43.2Z"
+ 						fill="#171717" />
+ 					<path
+ 						d="M32.64 12L24 20.64L15.36 12L12 15.36L20.64 24L12 32.64L15.36 36L24 27.36L32.64 36L36 32.64L27.36 24L36 15.36L32.64 12Z"
+ 						fill="#171717" />
+ 				</svg>
+ 			</button>
+ 			<div data-tabs data-tabs-animate="500" class="login__tabs">
+ 				<nav data-tabs-titles class="login__navigation">
+ 					<button type="button" class="login__title _tab-active">Вход</button>
+ 					<button type="button" class="login__title">Регистрация</button>
+ 				</nav>
+ 				<div data-tabs-body class="login__content">
+ 					<div class="login__body">
+ 						<form action="#" class="login__form form-login">
+ 							<label for="" class="form-login__label">Имя пользователя или email</label>
+ 							<input autocomplete="off" type="email" name="form[]" data-error="Ошибка"
+ 								placeholder="Например, pochta@gmail.com" class="form-login__input input">
+ 							<label for="" class="form-login__label">Пароль</label>
+ 							<input autocomplete="off" type="password" name="form[]" data-error="Ошибка" placeholder=""
+ 								class="form-login__input input">
+ 							<div class="form-login__captcha captcha-login">
+ 								<div class="captcha-login__title">Введите ответ цифрами</div>
+ 								<label for="" class="captcha-login__label">
+ 									<span>17 + 20 =</span>
+ 									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+ 										placeholder="" class="captcha-login__input input">
+ 								</label>
+ 							</div>
+ 							<div class="form-login__footer">
+ 								<button type="submit" class="form-login__button button button_orange">Войти</button>
+ 								<div class="checkbox">
+ 									<input id="login_1" data-error="Ошибка" class="checkbox__input" type="checkbox"
+ 										value="1" name="form[]">
+ 									<label for="login_1" class="checkbox__label"><span class="checkbox__text">Запомнить
+ 											меня</span></label>
+ 								</div>
+ 							</div>
+ 						</form>
+ 						<button type="button" class="login__loss-pass" data-popup="#loss-password">Забыли
+ 							пароль?</button>
+ 					</div>
+ 					<div class="login__body">
+ 						<form action="#" class="login__form form-login">
+ 							<div class="form-login__subtitle">Пароль будет отправлен вам на вашу почту</div>
+ 							<label for="" class="form-login__label">Email</label>
+ 							<input autocomplete="off" type="email" name="form[]" data-error="Ошибка"
+ 								placeholder="Например, pochta@gmail.com" class="form-login__input input">
+ 							<div class="form-login__captcha captcha-login">
+ 								<div class="captcha-login__title">Введите ответ цифрами</div>
+ 								<label for="" class="captcha-login__label">
+ 									<span>17 + 20 =</span>
+ 									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+ 										placeholder="" class="captcha-login__input input">
+ 								</label>
+ 							</div>
+ 							<div class="form-login__text">
+ 								Ваши личные данные будут использоваться для упрощения вашей работы с сайтом, управления
+ 								доступом к вашей учётной записи и для других целей, описанных в нашей <a
+ 									href="#">политика
+ 									конфиденциальности</a>
+ 							</div>
+ 							<div class="checkbox">
+ 								<input id="reg_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+ 									name="form[]" checked>
+ 								<label for="reg_1" class="checkbox__label"><span class="checkbox__text">Подписаться
+ 										на рассылку новостей!</span></label>
+ 							</div>
+ 							<button type="submit"
+ 								class="form-login__button button button_orange">Зарегистрироваться</button>
+ 						</form>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>
+ <div id="loss-password" aria-hidden="true" class="popup">
+ 	<div class="popup__wrapper">
+ 		<div class="popup__content loss-password">
+ 			<button data-close type="button" class="popup__close loss-password__close">
+ 				<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 					<path
+ 						d="M24 0C10.8 0 0 10.8 0 24C0 37.2 10.8 48 24 48C37.2 48 48 37.2 48 24C48 10.8 37.2 0 24 0ZM24 43.2C13.44 43.2 4.8 34.56 4.8 24C4.8 13.44 13.44 4.8 24 4.8C34.56 4.8 43.2 13.44 43.2 24C43.2 34.56 34.56 43.2 24 43.2Z"
+ 						fill="#171717" />
+ 					<path
+ 						d="M32.64 12L24 20.64L15.36 12L12 15.36L20.64 24L12 32.64L15.36 36L24 27.36L32.64 36L36 32.64L27.36 24L36 15.36L32.64 12Z"
+ 						fill="#171717" />
+ 				</svg>
+ 			</button>
+ 			<div class="loss-password__text">
+ 				Забыли пароль? Пожалуйста, введите ваше имя пользователя или адрес электронной почты. Вы получите
+ 				ссылку для создания нового пароля по электронной почте
+ 			</div>
+ 			<form action="#" class="loss-password__form">
+ 				<label for="" class="loss-password__label">Email</label>
+ 				<input autocomplete="off" type="email" name="form[]" data-error="Ошибка"
+ 					placeholder="Например, pochta@gmail.com" class="loss-password__input input" required>
+ 				<button type="submit" class="loss-password__button button button_orange">Сброс пароля</button>
+ 			</form>
+ 		</div>
+ 	</div>
+ </div>
+ <div id="mobile-filter" aria-hidden="true" class="popup">
+ 	<div class="popup__wrapper">
+ 		<div class="popup__content mobile-filter">
+ 			<div class="mobile-filter__header">
+ 				<div class="mobile-filter__title section-title">Выбрать</div>
+ 				<button data-close type="button" class="popup__close mobile-filter__close">
+ 					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 						<path
+ 							d="M24 0C10.8 0 0 10.8 0 24C0 37.2 10.8 48 24 48C37.2 48 48 37.2 48 24C48 10.8 37.2 0 24 0ZM24 43.2C13.44 43.2 4.8 34.56 4.8 24C4.8 13.44 13.44 4.8 24 4.8C34.56 4.8 43.2 13.44 43.2 24C43.2 34.56 34.56 43.2 24 43.2Z"
+ 							fill="#171717" />
+ 						<path
+ 							d="M32.64 12L24 20.64L15.36 12L12 15.36L20.64 24L12 32.64L15.36 36L24 27.36L32.64 36L36 32.64L27.36 24L36 15.36L32.64 12Z"
+ 							fill="#171717" />
+ 					</svg>
+ 				</button>
+ 			</div>
+ 			<div class="mobile-filter__wrapper">
+				 <button type="submit" class="mobile-filter__button button" data-close>Отправить</button>
+			 </div>
+ 		</div>
+ 	</div>
+ </div>

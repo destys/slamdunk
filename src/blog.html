@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Блог"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="blog">
+				<div class="blog__container">
+					<select name="form[]" class="blog__select">
+						<option value="1" selected data-href="#">Пункт №1</option>
+						<option value="2" data-href="#">Пункт №2</option>
+						<option value="3" data-href="#">Пункт №3</option>
+						<option value="4" data-href="#">Пункт №4</option>
+					</select>
+					<div class="blog__inner">
+						<div class="blog__content content-blog">
+							<div class="content-blog__slider swiper">
+								<div class="content-blog__wrapper swiper-wrapper">
+									<div class="content-blog__slide swiper-slide slide-content-blog">
+										<div class="slide-content-blog__img">
+											<img src="@img/blog/fav-blog-img.jpg" alt="fav-blog-img">
+											<div class="_overlay"></div>
+										</div>
+										<div class="slide-content-blog__content">
+											<div class="slide-content-blog__top">
+												<a href="#" class="slide-content-blog__cat">
+													<span>Обзоры</span>
+													<svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M1.116 7.436L0.612 6.932L6 1.544L5.856 1.856L1.272 1.544L1.932 0.883999L6.876 1.16L7.164 6.104L6.504 6.764L6.192 2.204L6.504 2.048L1.116 7.436Z"
+															fill="#FF6A00" />
+													</svg>
+												</a>
+												<div class="slide-content-blog__date">28 января 2021</div>
+											</div>
+											<a href="#" class="slide-content-blog__title">Кроссовки, которые помогут вам
+												во время марафона самоизоляции</a>
+										</div>
+									</div>
+									<div class="content-blog__slide swiper-slide slide-content-blog">
+										<div class="slide-content-blog__img">
+											<img src="@img/blog/fav-blog-img.jpg" alt="fav-blog-img">
+											<div class="_overlay"></div>
+										</div>
+										<div class="slide-content-blog__content">
+											<div class="slide-content-blog__top">
+												<a href="#" class="slide-content-blog__cat">
+													<span>Обзоры</span>
+													<svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M1.116 7.436L0.612 6.932L6 1.544L5.856 1.856L1.272 1.544L1.932 0.883999L6.876 1.16L7.164 6.104L6.504 6.764L6.192 2.204L6.504 2.048L1.116 7.436Z"
+															fill="#FF6A00" />
+													</svg>
+												</a>
+												<div class="slide-content-blog__date">28 января 2021</div>
+											</div>
+											<a href="#" class="slide-content-blog__title">Кроссовки, которые помогут вам
+												во время марафона самоизоляции</a>
+										</div>
+									</div>
+									<div class="content-blog__slide swiper-slide slide-content-blog">
+										<div class="slide-content-blog__img">
+											<img src="@img/blog/fav-blog-img.jpg" alt="fav-blog-img">
+											<div class="_overlay"></div>
+										</div>
+										<div class="slide-content-blog__content">
+											<div class="slide-content-blog__top">
+												<a href="#" class="slide-content-blog__cat">
+													<span>Обзоры</span>
+													<svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M1.116 7.436L0.612 6.932L6 1.544L5.856 1.856L1.272 1.544L1.932 0.883999L6.876 1.16L7.164 6.104L6.504 6.764L6.192 2.204L6.504 2.048L1.116 7.436Z"
+															fill="#FF6A00" />
+													</svg>
+												</a>
+												<div class="slide-content-blog__date">28 января 2021</div>
+											</div>
+											<a href="#" class="slide-content-blog__title">Кроссовки, которые помогут вам
+												во время марафона самоизоляции</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="content-blog__tags tags-content-blog">
+								<div class="tags-content-blog__slider swiper">
+									<div class="tags-content-blog__wrapper swiper-wrapper">
+										<a href="#" class="tags-content-blog__slide swiper-slide">#GOLDEN STATE
+											WARRIORS</a>
+										<a href="#" class="tags-content-blog__slide swiper-slide">#JORDAN BRAND</a>
+										<a href="#" class="tags-content-blog__slide swiper-slide">#FASHION</a>
+										<a href="#" class="tags-content-blog__slide swiper-slide">#CLEVELAND
+											CAVALIERS</a>
+										<a href="#" class="tags-content-blog__slide swiper-slide">#GOLDEN STATE
+											WARRIORS</a>
+										<a href="#" class="tags-content-blog__slide swiper-slide">#JORDAN BRAND</a>
+										<a href="#" class="tags-content-blog__slide swiper-slide">#FASHION</a>
+										<a href="#" class="tags-content-blog__slide swiper-slide">#CLEVELAND
+											CAVALIERS</a>
+										<a href="#" class="tags-content-blog__slide swiper-slide">#GOLDEN STATE
+											WARRIORS</a>
+										<a href="#" class="tags-content-blog__slide swiper-slide">#JORDAN BRAND</a>
+										<a href="#" class="tags-content-blog__slide swiper-slide">#FASHION</a>
+										<a href="#" class="tags-content-blog__slide swiper-slide">#CLEVELAND
+											CAVALIERS</a>
+										<a href="#" class="tags-content-blog__slide swiper-slide">#GOLDEN STATE
+											WARRIORS</a>
+										<a href="#" class="tags-content-blog__slide swiper-slide">#JORDAN BRAND</a>
+										<a href="#" class="tags-content-blog__slide swiper-slide">#FASHION</a>
+										<a href="#" class="tags-content-blog__slide swiper-slide">#CLEVELAND
+											CAVALIERS</a>
+										<a href="#" class="tags-content-blog__slide swiper-slide">#GOLDEN STATE
+											WARRIORS</a>
+										<a href="#" class="tags-content-blog__slide swiper-slide">#JORDAN BRAND</a>
+										<a href="#" class="tags-content-blog__slide swiper-slide">#FASHION</a>
+										<a href="#" class="tags-content-blog__slide swiper-slide">#CLEVELAND
+											CAVALIERS</a>
+									</div>
+								</div>
+							</div>
+							<div class="content-blog__posts posts-content-blog">
+								<div id="js-grid-masonry" class="posts-content-blog__list cbp">
+									<div class="posts-content-blog__item item-blog-posts cbp-item">
+										<div class="item-blog-posts__img">
+											<img src="@img/blog/post-1.jpg" alt="image">
+										</div>
+										<div class="item-blog-posts__content">
+											<div class="item-blog-posts__top">
+												<a href="#" class="item-blog-posts__cat">
+													<span>обзоры</span>
+													<svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M1.116 7.436L0.612 6.932L6 1.544L5.856 1.856L1.272 1.544L1.932 0.883999L6.876 1.16L7.164 6.104L6.504 6.764L6.192 2.204L6.504 2.048L1.116 7.436Z"
+															fill="#FF6A00" />
+													</svg>
+												</a>
+												<div class="item-blog-posts__date">28 января 2021</div>
+											</div>
+											<a href="#" class="item-blog-posts__title">Релизы кроссовок Nike 2021</a>
+										</div>
+									</div>
+									<div class="posts-content-blog__item item-blog-posts cbp-item">
+										<div class="item-blog-posts__img">
+											<img src="@img/blog/post-2.jpg" alt="image">
+										</div>
+										<div class="item-blog-posts__content">
+											<div class="item-blog-posts__top">
+												<a href="#" class="item-blog-posts__cat">
+													<span>обзоры</span>
+													<svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M1.116 7.436L0.612 6.932L6 1.544L5.856 1.856L1.272 1.544L1.932 0.883999L6.876 1.16L7.164 6.104L6.504 6.764L6.192 2.204L6.504 2.048L1.116 7.436Z"
+															fill="#FF6A00" />
+													</svg>
+												</a>
+												<div class="item-blog-posts__date">28 января 2021</div>
+											</div>
+											<a href="#" class="item-blog-posts__title">Релизы кроссовок Nike 2021</a>
+										</div>
+									</div>
+									<div class="posts-content-blog__item item-blog-posts cbp-item">
+										<div class="item-blog-posts__img">
+											<img src="@img/blog/post-3.jpg" alt="image">
+										</div>
+										<div class="item-blog-posts__content">
+											<div class="item-blog-posts__top">
+												<a href="#" class="item-blog-posts__cat">
+													<span>обзоры</span>
+													<svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M1.116 7.436L0.612 6.932L6 1.544L5.856 1.856L1.272 1.544L1.932 0.883999L6.876 1.16L7.164 6.104L6.504 6.764L6.192 2.204L6.504 2.048L1.116 7.436Z"
+															fill="#FF6A00" />
+													</svg>
+												</a>
+												<div class="item-blog-posts__date">28 января 2021</div>
+											</div>
+											<a href="#" class="item-blog-posts__title">Релизы кроссовок Nike 2021</a>
+										</div>
+									</div>
+									<div class="posts-content-blog__item item-blog-posts cbp-item">
+										<div class="item-blog-posts__img">
+											<img src="@img/blog/post-3.jpg" alt="image">
+										</div>
+										<div class="item-blog-posts__content">
+											<div class="item-blog-posts__top">
+												<a href="#" class="item-blog-posts__cat">
+													<span>обзоры</span>
+													<svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M1.116 7.436L0.612 6.932L6 1.544L5.856 1.856L1.272 1.544L1.932 0.883999L6.876 1.16L7.164 6.104L6.504 6.764L6.192 2.204L6.504 2.048L1.116 7.436Z"
+															fill="#FF6A00" />
+													</svg>
+												</a>
+												<div class="item-blog-posts__date">28 января 2021</div>
+											</div>
+											<a href="#" class="item-blog-posts__title">Релизы кроссовок Nike 2021</a>
+										</div>
+									</div>
+									<div class="posts-content-blog__item item-blog-posts cbp-item">
+										<div class="item-blog-posts__img">
+											<img src="@img/blog/post-2.jpg" alt="image">
+										</div>
+										<div class="item-blog-posts__content">
+											<div class="item-blog-posts__top">
+												<a href="#" class="item-blog-posts__cat">
+													<span>обзоры</span>
+													<svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M1.116 7.436L0.612 6.932L6 1.544L5.856 1.856L1.272 1.544L1.932 0.883999L6.876 1.16L7.164 6.104L6.504 6.764L6.192 2.204L6.504 2.048L1.116 7.436Z"
+															fill="#FF6A00" />
+													</svg>
+												</a>
+												<div class="item-blog-posts__date">28 января 2021</div>
+											</div>
+											<a href="#" class="item-blog-posts__title">Релизы кроссовок Nike 2021</a>
+										</div>
+									</div>
+									<div class="posts-content-blog__item item-blog-posts cbp-item">
+										<div class="item-blog-posts__img">
+											<img src="@img/blog/post-1.jpg" alt="image">
+										</div>
+										<div class="item-blog-posts__content">
+											<div class="item-blog-posts__top">
+												<a href="#" class="item-blog-posts__cat">
+													<span>обзоры</span>
+													<svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M1.116 7.436L0.612 6.932L6 1.544L5.856 1.856L1.272 1.544L1.932 0.883999L6.876 1.16L7.164 6.104L6.504 6.764L6.192 2.204L6.504 2.048L1.116 7.436Z"
+															fill="#FF6A00" />
+													</svg>
+												</a>
+												<div class="item-blog-posts__date">28 января 2021</div>
+											</div>
+											<a href="#" class="item-blog-posts__title">Релизы кроссовок Nike 2021</a>
+										</div>
+									</div>
+									<div class="posts-content-blog__item item-blog-posts cbp-item">
+										<div class="item-blog-posts__img">
+											<img src="@img/blog/post-1.jpg" alt="image">
+										</div>
+										<div class="item-blog-posts__content">
+											<div class="item-blog-posts__top">
+												<a href="#" class="item-blog-posts__cat">
+													<span>обзоры</span>
+													<svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M1.116 7.436L0.612 6.932L6 1.544L5.856 1.856L1.272 1.544L1.932 0.883999L6.876 1.16L7.164 6.104L6.504 6.764L6.192 2.204L6.504 2.048L1.116 7.436Z"
+															fill="#FF6A00" />
+													</svg>
+												</a>
+												<div class="item-blog-posts__date">28 января 2021</div>
+											</div>
+											<a href="#" class="item-blog-posts__title">Релизы кроссовок Nike 2021</a>
+										</div>
+									</div>
+									<div class="posts-content-blog__item item-blog-posts cbp-item">
+										<div class="item-blog-posts__img">
+											<img src="@img/blog/post-2.jpg" alt="image">
+										</div>
+										<div class="item-blog-posts__content">
+											<div class="item-blog-posts__top">
+												<a href="#" class="item-blog-posts__cat">
+													<span>обзоры</span>
+													<svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M1.116 7.436L0.612 6.932L6 1.544L5.856 1.856L1.272 1.544L1.932 0.883999L6.876 1.16L7.164 6.104L6.504 6.764L6.192 2.204L6.504 2.048L1.116 7.436Z"
+															fill="#FF6A00" />
+													</svg>
+												</a>
+												<div class="item-blog-posts__date">28 января 2021</div>
+											</div>
+											<a href="#" class="item-blog-posts__title">Релизы кроссовок Nike 2021</a>
+										</div>
+									</div>
+									<div class="posts-content-blog__item item-blog-posts cbp-item">
+										<div class="item-blog-posts__img">
+											<img src="@img/blog/post-3.jpg" alt="image">
+										</div>
+										<div class="item-blog-posts__content">
+											<div class="item-blog-posts__top">
+												<a href="#" class="item-blog-posts__cat">
+													<span>обзоры</span>
+													<svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M1.116 7.436L0.612 6.932L6 1.544L5.856 1.856L1.272 1.544L1.932 0.883999L6.876 1.16L7.164 6.104L6.504 6.764L6.192 2.204L6.504 2.048L1.116 7.436Z"
+															fill="#FF6A00" />
+													</svg>
+												</a>
+												<div class="item-blog-posts__date">28 января 2021</div>
+											</div>
+											<a href="#" class="item-blog-posts__title">Релизы кроссовок Nike 2021</a>
+										</div>
+									</div>
+									<div class="posts-content-blog__item item-blog-posts cbp-item">
+										<div class="item-blog-posts__img">
+											<img src="@img/blog/post-3.jpg" alt="image">
+										</div>
+										<div class="item-blog-posts__content">
+											<div class="item-blog-posts__top">
+												<a href="#" class="item-blog-posts__cat">
+													<span>обзоры</span>
+													<svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M1.116 7.436L0.612 6.932L6 1.544L5.856 1.856L1.272 1.544L1.932 0.883999L6.876 1.16L7.164 6.104L6.504 6.764L6.192 2.204L6.504 2.048L1.116 7.436Z"
+															fill="#FF6A00" />
+													</svg>
+												</a>
+												<div class="item-blog-posts__date">28 января 2021</div>
+											</div>
+											<a href="#" class="item-blog-posts__title">Релизы кроссовок Nike 2021</a>
+										</div>
+									</div>
+									<div class="posts-content-blog__item item-blog-posts cbp-item">
+										<div class="item-blog-posts__img">
+											<img src="@img/blog/post-2.jpg" alt="image">
+										</div>
+										<div class="item-blog-posts__content">
+											<div class="item-blog-posts__top">
+												<a href="#" class="item-blog-posts__cat">
+													<span>обзоры</span>
+													<svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M1.116 7.436L0.612 6.932L6 1.544L5.856 1.856L1.272 1.544L1.932 0.883999L6.876 1.16L7.164 6.104L6.504 6.764L6.192 2.204L6.504 2.048L1.116 7.436Z"
+															fill="#FF6A00" />
+													</svg>
+												</a>
+												<div class="item-blog-posts__date">28 января 2021</div>
+											</div>
+											<a href="#" class="item-blog-posts__title">Релизы кроссовок Nike 2021</a>
+										</div>
+									</div>
+									<div class="posts-content-blog__item item-blog-posts cbp-item">
+										<div class="item-blog-posts__img">
+											<img src="@img/blog/post-1.jpg" alt="image">
+										</div>
+										<div class="item-blog-posts__content">
+											<div class="item-blog-posts__top">
+												<a href="#" class="item-blog-posts__cat">
+													<span>обзоры</span>
+													<svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M1.116 7.436L0.612 6.932L6 1.544L5.856 1.856L1.272 1.544L1.932 0.883999L6.876 1.16L7.164 6.104L6.504 6.764L6.192 2.204L6.504 2.048L1.116 7.436Z"
+															fill="#FF6A00" />
+													</svg>
+												</a>
+												<div class="item-blog-posts__date">28 января 2021</div>
+											</div>
+											<a href="#" class="item-blog-posts__title">Релизы кроссовок Nike 2021</a>
+										</div>
+									</div>
+									<div class="posts-content-blog__item item-blog-posts cbp-item">
+										<div class="item-blog-posts__img">
+											<img src="@img/blog/post-1.jpg" alt="image">
+										</div>
+										<div class="item-blog-posts__content">
+											<div class="item-blog-posts__top">
+												<a href="#" class="item-blog-posts__cat">
+													<span>обзоры</span>
+													<svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M1.116 7.436L0.612 6.932L6 1.544L5.856 1.856L1.272 1.544L1.932 0.883999L6.876 1.16L7.164 6.104L6.504 6.764L6.192 2.204L6.504 2.048L1.116 7.436Z"
+															fill="#FF6A00" />
+													</svg>
+												</a>
+												<div class="item-blog-posts__date">28 января 2021</div>
+											</div>
+											<a href="#" class="item-blog-posts__title">Релизы кроссовок Nike 2021</a>
+										</div>
+									</div>
+									<div class="posts-content-blog__item item-blog-posts cbp-item">
+										<div class="item-blog-posts__img">
+											<img src="@img/blog/post-2.jpg" alt="image">
+										</div>
+										<div class="item-blog-posts__content">
+											<div class="item-blog-posts__top">
+												<a href="#" class="item-blog-posts__cat">
+													<span>обзоры</span>
+													<svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M1.116 7.436L0.612 6.932L6 1.544L5.856 1.856L1.272 1.544L1.932 0.883999L6.876 1.16L7.164 6.104L6.504 6.764L6.192 2.204L6.504 2.048L1.116 7.436Z"
+															fill="#FF6A00" />
+													</svg>
+												</a>
+												<div class="item-blog-posts__date">28 января 2021</div>
+											</div>
+											<a href="#" class="item-blog-posts__title">Релизы кроссовок Nike 2021</a>
+										</div>
+									</div>
+									<div class="posts-content-blog__item item-blog-posts cbp-item">
+										<div class="item-blog-posts__img">
+											<img src="@img/blog/post-3.jpg" alt="image">
+										</div>
+										<div class="item-blog-posts__content">
+											<div class="item-blog-posts__top">
+												<a href="#" class="item-blog-posts__cat">
+													<span>обзоры</span>
+													<svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M1.116 7.436L0.612 6.932L6 1.544L5.856 1.856L1.272 1.544L1.932 0.883999L6.876 1.16L7.164 6.104L6.504 6.764L6.192 2.204L6.504 2.048L1.116 7.436Z"
+															fill="#FF6A00" />
+													</svg>
+												</a>
+												<div class="item-blog-posts__date">28 января 2021</div>
+											</div>
+											<a href="#" class="item-blog-posts__title">Релизы кроссовок Nike 2021</a>
+										</div>
+									</div>
+									<div class="posts-content-blog__item item-blog-posts cbp-item">
+										<div class="item-blog-posts__img">
+											<img src="@img/blog/post-3.jpg" alt="image">
+										</div>
+										<div class="item-blog-posts__content">
+											<div class="item-blog-posts__top">
+												<a href="#" class="item-blog-posts__cat">
+													<span>обзоры</span>
+													<svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M1.116 7.436L0.612 6.932L6 1.544L5.856 1.856L1.272 1.544L1.932 0.883999L6.876 1.16L7.164 6.104L6.504 6.764L6.192 2.204L6.504 2.048L1.116 7.436Z"
+															fill="#FF6A00" />
+													</svg>
+												</a>
+												<div class="item-blog-posts__date">28 января 2021</div>
+											</div>
+											<a href="#" class="item-blog-posts__title">Релизы кроссовок Nike 2021</a>
+										</div>
+									</div>
+									<div class="posts-content-blog__item item-blog-posts cbp-item">
+										<div class="item-blog-posts__img">
+											<img src="@img/blog/post-2.jpg" alt="image">
+										</div>
+										<div class="item-blog-posts__content">
+											<div class="item-blog-posts__top">
+												<a href="#" class="item-blog-posts__cat">
+													<span>обзоры</span>
+													<svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M1.116 7.436L0.612 6.932L6 1.544L5.856 1.856L1.272 1.544L1.932 0.883999L6.876 1.16L7.164 6.104L6.504 6.764L6.192 2.204L6.504 2.048L1.116 7.436Z"
+															fill="#FF6A00" />
+													</svg>
+												</a>
+												<div class="item-blog-posts__date">28 января 2021</div>
+											</div>
+											<a href="#" class="item-blog-posts__title">Релизы кроссовок Nike 2021</a>
+										</div>
+									</div>
+									<div class="posts-content-blog__item item-blog-posts cbp-item">
+										<div class="item-blog-posts__img">
+											<img src="@img/blog/post-1.jpg" alt="image">
+										</div>
+										<div class="item-blog-posts__content">
+											<div class="item-blog-posts__top">
+												<a href="#" class="item-blog-posts__cat">
+													<span>обзоры</span>
+													<svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M1.116 7.436L0.612 6.932L6 1.544L5.856 1.856L1.272 1.544L1.932 0.883999L6.876 1.16L7.164 6.104L6.504 6.764L6.192 2.204L6.504 2.048L1.116 7.436Z"
+															fill="#FF6A00" />
+													</svg>
+												</a>
+												<div class="item-blog-posts__date">28 января 2021</div>
+											</div>
+											<a href="#" class="item-blog-posts__title">Релизы кроссовок Nike 2021</a>
+										</div>
+									</div>
+									<div class="posts-content-blog__item item-blog-posts cbp-item">
+										<div class="item-blog-posts__img">
+											<img src="@img/blog/post-1.jpg" alt="image">
+										</div>
+										<div class="item-blog-posts__content">
+											<div class="item-blog-posts__top">
+												<a href="#" class="item-blog-posts__cat">
+													<span>обзоры</span>
+													<svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M1.116 7.436L0.612 6.932L6 1.544L5.856 1.856L1.272 1.544L1.932 0.883999L6.876 1.16L7.164 6.104L6.504 6.764L6.192 2.204L6.504 2.048L1.116 7.436Z"
+															fill="#FF6A00" />
+													</svg>
+												</a>
+												<div class="item-blog-posts__date">28 января 2021</div>
+											</div>
+											<a href="#" class="item-blog-posts__title">Релизы кроссовок Nike 2021</a>
+										</div>
+									</div>
+									<div class="posts-content-blog__item item-blog-posts cbp-item">
+										<div class="item-blog-posts__img">
+											<img src="@img/blog/post-2.jpg" alt="image">
+										</div>
+										<div class="item-blog-posts__content">
+											<div class="item-blog-posts__top">
+												<a href="#" class="item-blog-posts__cat">
+													<span>обзоры</span>
+													<svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M1.116 7.436L0.612 6.932L6 1.544L5.856 1.856L1.272 1.544L1.932 0.883999L6.876 1.16L7.164 6.104L6.504 6.764L6.192 2.204L6.504 2.048L1.116 7.436Z"
+															fill="#FF6A00" />
+													</svg>
+												</a>
+												<div class="item-blog-posts__date">28 января 2021</div>
+											</div>
+											<a href="#" class="item-blog-posts__title">Релизы кроссовок Nike 2021</a>
+										</div>
+									</div>
+									<div class="posts-content-blog__item item-blog-posts cbp-item">
+										<div class="item-blog-posts__img">
+											<img src="@img/blog/post-3.jpg" alt="image">
+										</div>
+										<div class="item-blog-posts__content">
+											<div class="item-blog-posts__top">
+												<a href="#" class="item-blog-posts__cat">
+													<span>обзоры</span>
+													<svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M1.116 7.436L0.612 6.932L6 1.544L5.856 1.856L1.272 1.544L1.932 0.883999L6.876 1.16L7.164 6.104L6.504 6.764L6.192 2.204L6.504 2.048L1.116 7.436Z"
+															fill="#FF6A00" />
+													</svg>
+												</a>
+												<div class="item-blog-posts__date">28 января 2021</div>
+											</div>
+											<a href="#" class="item-blog-posts__title">Релизы кроссовок Nike 2021</a>
+										</div>
+									</div>
+									<div class="posts-content-blog__item item-blog-posts cbp-item">
+										<div class="item-blog-posts__img">
+											<img src="@img/blog/post-3.jpg" alt="image">
+										</div>
+										<div class="item-blog-posts__content">
+											<div class="item-blog-posts__top">
+												<a href="#" class="item-blog-posts__cat">
+													<span>обзоры</span>
+													<svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M1.116 7.436L0.612 6.932L6 1.544L5.856 1.856L1.272 1.544L1.932 0.883999L6.876 1.16L7.164 6.104L6.504 6.764L6.192 2.204L6.504 2.048L1.116 7.436Z"
+															fill="#FF6A00" />
+													</svg>
+												</a>
+												<div class="item-blog-posts__date">28 января 2021</div>
+											</div>
+											<a href="#" class="item-blog-posts__title">Релизы кроссовок Nike 2021</a>
+										</div>
+									</div>
+									<div class="posts-content-blog__item item-blog-posts cbp-item">
+										<div class="item-blog-posts__img">
+											<img src="@img/blog/post-2.jpg" alt="image">
+										</div>
+										<div class="item-blog-posts__content">
+											<div class="item-blog-posts__top">
+												<a href="#" class="item-blog-posts__cat">
+													<span>обзоры</span>
+													<svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M1.116 7.436L0.612 6.932L6 1.544L5.856 1.856L1.272 1.544L1.932 0.883999L6.876 1.16L7.164 6.104L6.504 6.764L6.192 2.204L6.504 2.048L1.116 7.436Z"
+															fill="#FF6A00" />
+													</svg>
+												</a>
+												<div class="item-blog-posts__date">28 января 2021</div>
+											</div>
+											<a href="#" class="item-blog-posts__title">Релизы кроссовок Nike 2021</a>
+										</div>
+									</div>
+									<div class="posts-content-blog__item item-blog-posts cbp-item">
+										<div class="item-blog-posts__img">
+											<img src="@img/blog/post-1.jpg" alt="image">
+										</div>
+										<div class="item-blog-posts__content">
+											<div class="item-blog-posts__top">
+												<a href="#" class="item-blog-posts__cat">
+													<span>обзоры</span>
+													<svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M1.116 7.436L0.612 6.932L6 1.544L5.856 1.856L1.272 1.544L1.932 0.883999L6.876 1.16L7.164 6.104L6.504 6.764L6.192 2.204L6.504 2.048L1.116 7.436Z"
+															fill="#FF6A00" />
+													</svg>
+												</a>
+												<div class="item-blog-posts__date">28 января 2021</div>
+											</div>
+											<a href="#" class="item-blog-posts__title">Релизы кроссовок Nike 2021</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="content-blog__showmore showmore-content-blog">
+								<button type="submit" class="showmore-content-blog__button">показать ещё</button>
+							</div>
+						</div>
+						<aside class="blog__sidebar sidebar-blog">
+							<ul class="sidebar-blog__list">
+								<li><a href="#" class="_current">Все</a></li>
+								<li><a href="#">Баскетбольные кроссовки</a></li>
+								<li><a href="#">Без рубрики</a></li>
+								<li><a href="#">История</a></li>
+								<li><a href="#">Легенды</a></li>
+								<li><a href="#">Мода</a></li>
+								<li><a href="#">Новости</a></li>
+								<li><a href="#">Обзоры</a></li>
+							</ul>
+						</aside>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
